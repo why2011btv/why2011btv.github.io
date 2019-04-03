@@ -25,8 +25,7 @@ I am broadly interested in Computer Vision and Natural Language Processing. My u
 #### [Pose Flow: Efficient Online Pose Tracking](https://arxiv.org/abs/1802.00977), BMVC 2018
 Yuliang Xiu, Jiefeng Li, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
 
-'''<img src="posetrack2.gif" alt="drawing" width="350" height="250"/> 
-![](posetrack2.gif)
+<img src="posetrack2.gif" alt="drawing" width="350" height="250"/> 
 
 #### [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
 Zelin Zhao, Gao Peng*, __Haoyu Wang__*, Haoshu Fang, Chengkun Li, and Cewu Lu.
@@ -40,4 +39,4 @@ __Haoyu Wang__, Vivek Kulkarni, and William Yang Wang.
 
 #### (* indicates equal contribution)
 
-You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.\
+You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
