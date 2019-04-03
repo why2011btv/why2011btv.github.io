@@ -23,7 +23,7 @@ I am broadly interested in Computer Vision and Natural Language Processing. My u
 ### Publications
 
 #### 1. [Pose Flow: Efficient Online Pose Tracking](https://arxiv.org/abs/1802.00977), BMVC 2018
-Yuliang Xiu, Jiefeng Li, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
+Yuliang Xiu *, Jiefeng Li *, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
 
 <img src="posetrack2.gif" alt="drawing" width="350" height="250"/> 
 
