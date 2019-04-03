@@ -28,7 +28,7 @@ Yuliang Xiu *, Jiefeng Li *, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
 <img src="posetrack2.gif" alt="drawing" width="350" height="250"/> 
 
 #### 2. [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
-Zelin Zhao, Gao Peng *, __Haoyu Wang__ *, Haoshu Fang, Chengkun Li, and Cewu Lu.
+Zelin Zhao, __Haoyu Wang__ *, Gao Peng *, Haoshu Fang, Chengkun Li, and Cewu Lu.
 
 <img src="visual_all.png" alt="drawing" width="350" height="250"/> 
 
