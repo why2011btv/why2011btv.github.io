@@ -26,6 +26,7 @@ I am broadly interested in Computer Vision and Natural Language Processing. My u
 Yuliang Xiu, Jiefeng Li, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
 
 <img src="posetrack2.gif" alt="drawing" width="350" height="250"/> 
+![]("posetrack2.gif")
 
 #### [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
 Zelin Zhao, Gao Peng*, __Haoyu Wang__*, Haoshu Fang, Chengkun Li, and Cewu Lu.
