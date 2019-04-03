@@ -39,4 +39,4 @@ __Haoyu Wang__, Vivek Kulkarni, and William Yang Wang.
 
 #### (* indicates equal contribution)
 
-You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.\
