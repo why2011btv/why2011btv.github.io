@@ -35,7 +35,7 @@ Zelin Zhao, Gao Peng*, Haoyu Wang*, Haoshu Fang, Chengkun Li, and Cewu Lu.
 
 <img src="visual_all.png" alt="drawing" width="350" height="250"/> 
 
-#### [DOLORES: Deep Contextualized Knowledge Graph Embeddings](https://arxiv.org/abs/1811.00147)
+#### [DOLORES: Deep Contextualized Knowledge Graph Embeddings](https://arxiv.org/abs/1811.00147), ACL 2019 submission
 Haoyu Wang, Vivek Kulkarni, and William Yang Wang.
 
 <img src="place_lived_in.png" alt="drawing" width="350" height="250"/> 
