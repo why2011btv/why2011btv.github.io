@@ -4,9 +4,7 @@
 
 #### [My Résumé](https://github.com/why2011btv/why2011btv.github.io/blob/master/CV_HAOYU_WANG.pdf)
 
-
-<div align=center><img src="profile_photo.jpg" alt="drawing" width="250"/></div>
-
+<img src="profile_photo.jpg" alt="drawing" width="250"/>
 
 Greetings! I am an undergraduate student at Shanghai Jiao Tong University, majoring in Information Engineering.
 
