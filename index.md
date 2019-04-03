@@ -6,9 +6,9 @@
 
 <img src="profile_photo.jpg" alt="drawing" width="250"/>
 
-Greetings! I am an undergraduate student at Shanghai Jiao Tong University, majoring in Information Engineering.
+Greetings! I am an undergraduate student at Shanghai Jiao Tong University (上海交通大学), majoring in Information Engineering.
 
-I was a visiting student of the [Natural Language Processing group](http://nlp.cs.ucsb.edu) at UCSB in the summer of 2018, advised by [Prof. William Wang](http://cs.ucsb.edu/~william/) and mentored by [Dr. Vivek Kulkarni](https://viveksck.github.io). I did most of my undergrad research at the Machine Vision and Intelligence Group at SJTU, advised by [Prof. Cewu Lu](http://mvig.sjtu.edu.cn/index.html). I was also a research assistant at the [National Engineering Laboratory for Information Content Analysis Technology](http://nelcat.sjtu.edu.cn/index.html) at SJTU, advised by Prof. Shenghong Li.
+I was a visiting student of the [Natural Language Processing group](http://nlp.cs.ucsb.edu) at UCSB in the summer of 2018, advised by [Prof. William Wang](http://cs.ucsb.edu/~william/) and mentored by [Dr. Vivek Kulkarni](https://viveksck.github.io). I did most of my undergrad research at the Machine Vision and Intelligence Group at SJTU, advised by [Prof. Cewu Lu](http://mvig.sjtu.edu.cn/index.html). I was also a research assistant at the [National Engineering Laboratory for Information Content Analysis Technology](http://nelcat.sjtu.edu.cn/index.html) at SJTU, advised by Prof. Shenghong Li. I spent a great time at summer school at University of Washington in 2016 and a cultural program at Sungkyunkwan University (성균관대학교) in Jan 2019.
 
 I am broadly interested in Computer Vision and Natural Language Processing. My ultimate academic goal is to design algorithms that are as cognitively capable as human beings in every meaningful dimensions. 
 
