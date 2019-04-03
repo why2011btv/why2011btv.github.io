@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+## Haoyu Wang (王浩宇)
 
-You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+#### Email: why2011btv[at]sjtu[dot]edu[dot]cn
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### [My Résumé](https://github.com/why2011btv/why2011btv.github.io/blob/master/CV_HAOYU_WANG.pdf)
 
-### Markdown
+<img src="profile_photo.jpg" alt="drawing" width="200"/>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Greetings! I am an undergraduate student at Shanghai Jiao Tong University, majoring in Information Engineering.
 
-```markdown
-Syntax highlighted code block
+I was a visiting student of the [Natural Language Processing group](http://nlp.cs.ucsb.edu) at UCSB in the summer of 2018, advised by [Prof. William Wang](http://cs.ucsb.edu/~william/) and mentored by [Dr. Vivek Kulkarni](https://viveksck.github.io). I did most of my undergrad research at the Machine Vision and Intelligence Group, advised by [Prof. Cewu Lu](http://mvig.sjtu.edu.cn/index.html). I was also a research assistant at [National Engineering Laboratory for Information Content Analysis Technology](http://nelcat.sjtu.edu.cn/index.html) at SJTU, advised by Prof. Shenghong Li.
 
-# Header 1
-## Header 2
-### Header 3
+I am broadly interested in Computer Vision and Natural Language Processing. My ultimate academic goal is to design algorithms that are as cognitively capable as human beings in every meaningful dimensions. 
 
-- Bulleted
-- List
+### Research Projects
 
-1. Numbered
-2. List
+- Human Pose Tracking: A new method for multi-person pose tracking with spatio-temporal information
 
-**Bold** and _Italic_ and `Code` text
+- 6D Object Pose Estimation: A novel architecture of detecting 3D model instance and estimating 6D pose under occlusion
 
-[Link](url) and ![Image](src)
-```
+- Knowledge Graph Embedding: A new knowledge graph embedding algorithm that captures contextual cues and dependencies among entities and relations
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Publications
 
-### Jekyll Themes
+#### [Pose Flow: Efficient Online Pose Tracking](https://arxiv.org/abs/1802.00977), BMVC 2018
+Yuliang Xiu, Jiefeng Li, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/why2011btv/why2011btv.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<img src="https://github.com/YuliangXiu/PoseFlow/blob/master/posetrack2.gif" alt="drawing" width="350" height="250"/> 
 
-### Support or Contact
+#### [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
+Zelin Zhao, Gao Peng*, __Haoyu Wang__*, Haoshu Fang, Chengkun Li, and Cewu Lu.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<img src="visual_all.png" alt="drawing" width="350" height="250"/> 
+
+#### [DOLORES: Deep Contextualized Knowledge Graph Embeddings](https://arxiv.org/abs/1811.00147), ACL 2019 submission
+__Haoyu Wang__, Vivek Kulkarni, and William Yang Wang.
+
+<img src="place_lived_in.png" alt="drawing" width="350" height="250"/> 
+
+#### (* indicates equal contribution)
+
+You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.\
