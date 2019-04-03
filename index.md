@@ -1,13 +1,8 @@
 ## Haoyu Wang (王浩宇)
-Email: why2011btv[at]sjtu[dot]edu[dot]cn
+#### Email: why2011btv[at]sjtu[dot]edu[dot]cn     
+#### [CV](https://github.com/why2011btv/why2011btv.github.io/blob/master/CV_HAOYU_WANG.pdf)
 
 <img src="profile_photo.jpg" alt="drawing" width="300"/>
-
-You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-### [CV](https://github.com/why2011btv/why2011btv.github.io/blob/master/CV_HAOYU_WANG.pdf)
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 Greetings! I am an undergraduate student at Shanghai Jiao Tong University, majoring in Information Engineering.
 
@@ -41,3 +36,5 @@ Haoyu Wang, Vivek Kulkarni, and William Yang Wang.
 <img src="place_lived_in.png" alt="drawing" width="350" height="250"/> 
 
 #### (* indicates equal contribution)
+
+You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
