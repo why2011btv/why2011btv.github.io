@@ -41,9 +41,9 @@ __Haoyu Wang__, [Vivek Kulkarni](https://viveksck.github.io), and [William Yang 
 
 ### Short-term Programs
 
-- EE Summer Intensive Program, University of Washington, 2016
+- EE Summer Intensive Program, University of Washington, Seattle, USA, 2016
 
-- Winter International Student Experience, Sungkyunkwan University (성균관대학교), 2019
+- Winter International Student Experience, Sungkyunkwan University (성균관대학교), Seoul, Korea, 2019
 
 ### Recreation
 
