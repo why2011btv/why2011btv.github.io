@@ -24,18 +24,20 @@ I am broadly interested in Computer Vision and Natural Language Processing and m
 - Knowledge Graph Embedding: A new knowledge graph embedding algorithm that captures contextual cues and dependencies among entities and relations
 
 ### Publications
-#### (* indicates equal contribution)
-### [Pose Flow: Efficient Online Pose Tracking](https://arxiv.org/abs/1802.00977), BMVC 2018
+
+#### [Pose Flow: Efficient Online Pose Tracking](https://arxiv.org/abs/1802.00977), BMVC 2018
 Yuliang Xiu, Jiefeng Li, Haoyu Wang, Yinghong Fang, and Cewu Lu.
 
 <img src="https://github.com/YuliangXiu/PoseFlow/blob/master/posetrack2.gif" alt="drawing" width="350" height="250"/> 
 
-### [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
+#### [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
 Zelin Zhao, Gao Peng*, Haoyu Wang*, Haoshu Fang, Chengkun Li, and Cewu Lu.
 
 <img src="visual_all.png" alt="drawing" width="350" height="250"/> 
 
-### [DOLORES: Deep Contextualized Knowledge Graph Embeddings](https://arxiv.org/abs/1811.00147)
+#### [DOLORES: Deep Contextualized Knowledge Graph Embeddings](https://arxiv.org/abs/1811.00147)
 Haoyu Wang, Vivek Kulkarni, and William Yang Wang.
 
 <img src="place_lived_in.png" alt="drawing" width="350" height="250"/> 
+
+#### (* indicates equal contribution)
