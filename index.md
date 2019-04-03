@@ -8,9 +8,9 @@
 
 Greetings! I am an undergraduate student at Shanghai Jiao Tong University (上海交通大学), majoring in Information Engineering.
 
-I was a visiting student of the [Natural Language Processing group](http://nlp.cs.ucsb.edu) at UCSB in the summer of 2018, advised by [Prof. William Wang](http://cs.ucsb.edu/~william/) and mentored by [Dr. Vivek Kulkarni](https://viveksck.github.io). I did most of my undergrad research at the Machine Vision and Intelligence Group at SJTU, advised by [Prof. Cewu Lu](http://mvig.sjtu.edu.cn/index.html). I was also a research assistant at the [National Engineering Laboratory for Information Content Analysis Technology](http://nelcat.sjtu.edu.cn/index.html) at SJTU, advised by Prof. Shenghong Li. I spent a great time at University of Washington Summer School in 2016 and completed a cultural program at Sungkyunkwan University (성균관대학교) in Jan 2019.
+Currently, I am working on my undergraduate thesis on load balancing algorithm with deep reinforcement learning under the supervision of [Prof. Lingge Jiang](http://ee.sjtu.edu.cn/EN/show.aspx?info_lb=17&info_id=208&flag=3). I was a visiting student of the [Natural Language Processing group](http://nlp.cs.ucsb.edu) at UCSB in the summer of 2018, advised by [Prof. William Wang](http://cs.ucsb.edu/~william/) and mentored by [Dr. Vivek Kulkarni](https://viveksck.github.io). I did most of my undergrad research at the Machine Vision and Intelligence Group at SJTU, advised by [Prof. Cewu Lu](http://mvig.sjtu.edu.cn/index.html). I was also a research assistant at the [National Engineering Laboratory for Information Content Analysis Technology](http://nelcat.sjtu.edu.cn/index.html) at SJTU, advised by Prof. Shenghong Li. I spent a great time at University of Washington Summer School in 2016 and completed a cultural program at Sungkyunkwan University (성균관대학교) in Jan 2019.
 
-I am broadly interested in Computer Vision and Natural Language Processing. My ultimate academic goal is to design algorithms that are as cognitively capable as human beings in every meaningful dimensions. 
+I am interested in applying machine learning algorithms to problems in Computer Vision, Natural Language Processing and datacenter networks. My ultimate academic goal is to design algorithms that are as cognitively capable as human beings in every meaningful dimensions. 
 
 ### Research Projects
 
