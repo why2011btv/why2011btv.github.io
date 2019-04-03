@@ -4,7 +4,7 @@
 
 #### [My Résumé](https://github.com/why2011btv/why2011btv.github.io/blob/master/CV_HAOYU_WANG.pdf)
 
-<img src="profile_photo.jpg" alt="drawing" width="200"/>
+<img src="profile_photo.jpg" alt="drawing" width="250"/>
 
 Greetings! I am an undergraduate student at Shanghai Jiao Tong University, majoring in Information Engineering.
 
@@ -28,7 +28,7 @@ Yuliang Xiu, Jiefeng Li, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
 <img src="posetrack2.gif" alt="drawing" width="350" height="250"/> 
 
 #### [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
-Zelin Zhao, Gao Peng*, __Haoyu Wang__*, Haoshu Fang, Chengkun Li, and Cewu Lu.
+Zelin Zhao, Gao Peng *, __Haoyu Wang__ *, Haoshu Fang, Chengkun Li, and Cewu Lu.
 
 <img src="visual_all.png" alt="drawing" width="350" height="250"/> 
 
