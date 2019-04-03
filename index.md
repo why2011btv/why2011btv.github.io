@@ -28,7 +28,7 @@ Yuliang Xiu *, Jiefeng Li *, __Haoyu Wang__, Yinghong Fang, and Cewu Lu.
 <div style="text-align: right"><img src="posetrack2.gif" alt="drawing" width="350" height="250"/></div>
 
 #### 2. [Estimating 6D Pose From Localizing Designated Surface Keypoints](https://arxiv.org/abs/1812.01387), ICCV 2019 submission
-Zelin Zhao, __Haoyu Wang__ *, Gao Peng *, Haoshu Fang, Chengkun Li, and Cewu Lu. <div align=right><img src="visual_all.png" alt="drawing" width="50" height="50"/></div>
+Zelin Zhao, __Haoyu Wang__ *, Gao Peng *, Haoshu Fang, Chengkun Li, and Cewu Lu. <div align=right><img src="visual_all.png" alt="drawing" width="350" height="250"/></div>
 
 #### 3. [DOLORES: Deep Contextualized Knowledge Graph Embeddings](https://arxiv.org/abs/1811.00147), ACL 2019 submission
 __Haoyu Wang__, Vivek Kulkarni, and William Yang Wang.
