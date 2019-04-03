@@ -39,4 +39,10 @@ __Haoyu Wang__, [Vivek Kulkarni](https://viveksck.github.io), and [William Yang 
 
 (* indicates equal contribution)
 
+### Recreation
+
+- Piano: started to play at the age of 4
+
+- Tennis: served as President of Tennis Association at SJTU in 2016
+
 You can use the [editor on GitHub](https://github.com/why2011btv/why2011btv.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
