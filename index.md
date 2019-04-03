@@ -1,6 +1,8 @@
 ## Haoyu Wang (王浩宇)
-#### Email: why2011btv[at]sjtu[dot]edu[dot]cn     
-#### [Résumé](https://github.com/why2011btv/why2011btv.github.io/blob/master/CV_HAOYU_WANG.pdf)
+     
+#### [My Résumé](https://github.com/why2011btv/why2011btv.github.io/blob/master/CV_HAOYU_WANG.pdf)
+
+#### Email: why2011btv[at]sjtu[dot]edu[dot]cn
 
 <img src="profile_photo.jpg" alt="drawing" width="300"/>
 
