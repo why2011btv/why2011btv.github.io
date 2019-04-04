@@ -653,7 +653,9 @@ a:hover {
         font-size: 1rem
     }
 }
-
+.main-content body {
+    margin-left: 50px
+}
 .main-content img {
     max-width: 100%
 }
