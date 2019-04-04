@@ -11,12 +11,12 @@
   .header h1 {
     position: relative;
     top: 18px;
-    left: -70px;
+    left: -120px;
 }
   .header h2 {
     position: relative;
     top: 18px;
-    left: -70px;
+    left: -120px;
   }
   
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -628,12 +628,13 @@ a:hover {
 }
 
 .main-content :first-child {
-    margin-top: 0
+    margin-top: 0;
+    margin-left: auto
 }
 
 @media screen and (min-width: 64em) {
     .main-content {
-        max-width: 64rem;
+        max-width: 80rem;
         padding: 2rem 6rem;
         margin: 0 auto;
         font-size: 1.1rem
@@ -653,9 +654,7 @@ a:hover {
         font-size: 1rem
     }
 }
-.main-content body {
-    margin-left: 50px
-}
+
 .main-content img {
     max-width: 100%
 }
