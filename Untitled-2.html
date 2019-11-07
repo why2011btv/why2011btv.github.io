@@ -13086,7 +13086,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="CUDA-Version">CUDA Version<a class="anchor-link" href="#CUDA-Version">&#182;</a></h2><p><code>cat /usr/local/cuda/version.txt</code></p>
 <h3 id="CUDA-Archive">CUDA Archive<a class="anchor-link" href="#CUDA-Archive">&#182;</a></h3><p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p>
-<h3 id="Refer-to-https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8">Refer to <a href="https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8">https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8</a><a class="anchor-link" href="#Refer-to-https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8">&#182;</a></h3><p><code>wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run</code>\
+<p><code>wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run</code>\
 <code>chmod +x cuda_9.0.176_384.81_linux-run</code>\
 <code>./cuda_9.0.176_384.81_linux-run --extract='/shared/why16gzl/'</code>\
 <code>./cuda-linux.9.0.176-22781540.run</code></p>
@@ -13565,6 +13565,25 @@ replace '/usr/local/cuda-9.0/' with '/shared/why16gzl/cuda-9.0/'</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Refer-to">Refer to<a class="anchor-link" href="#Refer-to">&#182;</a></h3><p><a href="https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8">https://gist.github.com/zhanwenchen/e520767a409325d9961072f666815bb8</a> \
+<a href="https://gist.github.com/niderhoff/52c514f20337516500084dd7b17af7e2">https://gist.github.com/niderhoff/52c514f20337516500084dd7b17af7e2</a> \
+<a href="https://medium.com/ibm-data-science-experience/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed">https://medium.com/ibm-data-science-experience/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed</a></p>
+<h3 id="Remember-to-use-rsync-instead-of-scp-to-transfer-files">Remember to use <code>rsync</code> instead of <code>scp</code> to transfer files<a class="anchor-link" href="#Remember-to-use-rsync-instead-of-scp-to-transfer-files">&#182;</a></h3><p><code>rsync -e "ssh -p 2212" -avgpolr ./Downloads/cudnn-9.0-linux-x64-v7.1.tar.zip why@junnan:/u01/why/Downloads</code></p>
+<h3 id="Use-git-lfs:">Use git-lfs:<a class="anchor-link" href="#Use-git-lfs:">&#182;</a></h3><p><code>git init</code>\
+<code>git lfs track "*.hdf5"</code>\
+<code>git add .</code>\
+<code>git add .gitattributes</code>\
+<code>git commit -m "add *.hdf5"</code>\
+<code>git remote add origin https://github.com/why2011btv/elmo_files.git</code>\
+<code>git push -u origin master</code>\</p>
+<p>If you fail to <code>push</code>, try to <code>rm</code> all embedded <code>.git</code> files</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
