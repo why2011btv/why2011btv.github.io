@@ -251,5 +251,5 @@ Why sometimes it does not count towards your contribution?
 </body>
 </html>
     
-### 07/12/2021
+## 07/12/2021
 <img width="1361" alt="Screen Shot 2021-07-12 at 11 56 23 PM" src="https://user-images.githubusercontent.com/32129905/125388101-e30a2c80-e36c-11eb-84ad-8ac0053ba2fc.png">
