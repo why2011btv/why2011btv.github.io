@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en-US">
     <meta charset="UTF-8">
 <body>
@@ -27,6 +27,9 @@ $: go to end of line<br>
 5G: go to line 5<br>
 G: go to end of file<br>
 /: search for string<br>
+    
+    
+    
 <h2>07/25/2020</h2>
 <h3>set up environment for <a href="https://github.com/mandarjoshi90/coref/">SpanBERT coref part</a></h3>
 pip install cort:<br>git clone https://github.com/smartschat/cort.git<br>go to setup.py line 37, delete "mmh3"<br>conda install mmh3<br>python setup.py install
@@ -244,9 +247,21 @@ You need to: git config user.email "your email here"<br>
 https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile#commit-was-made-less-than-24-hours-ago<br>
 Why sometimes it does not count towards your contribution?
 
-<h2>07/12/2021</h2>
 
 </body>
 </html>
     
-
+### BBB
+<h2>07/12/2021</h2>
+(miniconda38)  ✘ why16gzl@morrison  /shared/why16gzl/conda/miniconda3/envs  ln -s /shared/why16gzl/Environments/sed_env /shared/why16gzl/conda/miniconda3/envs/sed_env
+(miniconda38)  why16gzl@morrison  /shared/why16gzl/conda/miniconda3/envs  ls
+consistency_env  coref_SpanBERT_TF_env  myenv  sed_env
+(miniconda38)  why16gzl@morrison  /shared/why16gzl/conda/miniconda3/envs  ll
+total 20
+drwxr-s---  2 why16gzl why16gzl  7 Jul 12 23:52 ./
+drwxr-s--- 14 why16gzl why16gzl 15 Mar 12  2020 ../
+-rw-r-----  1 why16gzl why16gzl  0 Nov 20  2019 .conda_envs_dir_test
+lrwxrwxrwx  1 why16gzl why16gzl 46 Jul 26  2020 consistency_env -> /shared/why16gzl/logic_driven/consistency_env//
+lrwxrwxrwx  1 why16gzl why16gzl 52 Jul 26  2020 coref_SpanBERT_TF_env -> /shared/why16gzl/logic_driven/coref_SpanBERT_TF_env/
+lrwxrwxrwx  1 why16gzl why16gzl 34 Jul 26  2020 myenv -> /shared/why16gzl/miniconda3/myenv/
+lrwxrwxrwx  1 why16gzl why16gzl 37 Jul 12 23:52 sed_env -> /shared/why16gzl/Environments/sed_env/
