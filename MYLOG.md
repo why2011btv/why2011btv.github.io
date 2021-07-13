@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
 <body>
 
-<h1>Diary</h1>
+<h1>MYLOG</h1>
 <h2>07/23/2020</h2>
 <h3>conda activate /shared/why16gzl/logic_driven/consistency_env</h3>
 <h3>conda activate myenv</h3>
