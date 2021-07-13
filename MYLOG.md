@@ -251,17 +251,5 @@ Why sometimes it does not count towards your contribution?
 </body>
 </html>
     
-### BBB
-<h2>07/12/2021</h2>
-(miniconda38)  ✘ why16gzl@morrison  /shared/why16gzl/conda/miniconda3/envs  ln -s /shared/why16gzl/Environments/sed_env /shared/why16gzl/conda/miniconda3/envs/sed_env
-(miniconda38)  why16gzl@morrison  /shared/why16gzl/conda/miniconda3/envs  ls
-consistency_env  coref_SpanBERT_TF_env  myenv  sed_env
-(miniconda38)  why16gzl@morrison  /shared/why16gzl/conda/miniconda3/envs  ll
-total 20
-drwxr-s---  2 why16gzl why16gzl  7 Jul 12 23:52 ./
-drwxr-s--- 14 why16gzl why16gzl 15 Mar 12  2020 ../
--rw-r-----  1 why16gzl why16gzl  0 Nov 20  2019 .conda_envs_dir_test
-lrwxrwxrwx  1 why16gzl why16gzl 46 Jul 26  2020 consistency_env -> /shared/why16gzl/logic_driven/consistency_env//
-lrwxrwxrwx  1 why16gzl why16gzl 52 Jul 26  2020 coref_SpanBERT_TF_env -> /shared/why16gzl/logic_driven/coref_SpanBERT_TF_env/
-lrwxrwxrwx  1 why16gzl why16gzl 34 Jul 26  2020 myenv -> /shared/why16gzl/miniconda3/myenv/
-lrwxrwxrwx  1 why16gzl why16gzl 37 Jul 12 23:52 sed_env -> /shared/why16gzl/Environments/sed_env/
+## 07/12/2021
+<img width="1361" alt="Screen Shot 2021-07-12 at 11 56 23 PM" src="https://user-images.githubusercontent.com/32129905/125388101-e30a2c80-e36c-11eb-84ad-8ac0053ba2fc.png">
