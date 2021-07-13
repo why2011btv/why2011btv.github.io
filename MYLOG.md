@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
 <body>
 
-<h1>Diary</h1>
+<h1>MYLOG</h1>
 <h2>07/23/2020</h2>
 <h3>conda activate /shared/why16gzl/logic_driven/consistency_env</h3>
 <h3>conda activate myenv</h3>
@@ -244,7 +244,9 @@ You need to: git config user.email "your email here"<br>
 https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile#commit-was-made-less-than-24-hours-ago<br>
 Why sometimes it does not count towards your contribution?
 
-
+<h2>07/12/2021</h2>
 
 </body>
 </html>
+    
+
