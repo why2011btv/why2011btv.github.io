@@ -1,9 +1,21 @@
+## 07/23/2021
+- Why does "source venv/bin/activate" not work?
+  - <img width="1178" alt="Screen Shot 2021-07-23 at 12 52 02 AM" src="https://user-images.githubusercontent.com/32129905/126738758-6257a0b5-00b9-4fbf-990c-be1bc10468bf.png">
+  - Tentative solution ([reference](https://www.devdungeon.com/content/python-import-syspath-and-pythonpath-tutorial#toc-5)): 
+    - ```export VIRTUAL_ENV=/shared/public/ben/temporalextraction/venv```
+    - ```export PATH="$VIRTUAL_ENV/bin:$PATH"```
+    - ```export PYTHONHOME=/shared/public/ben/temporalextraction/venv```
+    - ```export PYTHONPATH=/shared/public/ben/temporalextraction/venv/lib/python3.6```
+  - [A similar problem](https://github.com/ContinuumIO/anaconda-issues/issues/172)
+- [Draft Pipeline](https://github.com/why2011btv/Quizlet_6)
+
+
 
 <html lang="en-US">
     <meta charset="UTF-8">
 <body>
 
-<h1>MYLOG</h1>
+<h1>MYLOG_old</h1>
 <h2>07/23/2020</h2>
 <h3>conda activate /shared/why16gzl/logic_driven/consistency_env</h3>
 <h3>conda activate myenv</h3>
@@ -256,3 +268,5 @@ Why sometimes it does not count towards your contribution?
     
 ## 07/13/2021
 pip list
+    
+
