@@ -7,7 +7,12 @@
     - ```export PYTHONHOME=/shared/public/ben/temporalextraction/venv```
     - ```export PYTHONPATH=/shared/public/ben/temporalextraction/venv/lib/python3.6```
   - [A similar problem](https://github.com/ContinuumIO/anaconda-issues/issues/172)
-- [Draft Pipeline](https://github.com/why2011btv/Quizlet_6)
+  - [Is my virtual environment (python) causing my PYTHONPATH to break?](https://stackoverflow.com/questions/4686463/is-my-virtual-environment-python-causing-my-pythonpath-to-break)
+  - [How do you set your pythonpath in an already-created virtualenv?](https://stackoverflow.com/questions/4757178/how-do-you-set-your-pythonpath-in-an-already-created-virtualenv)
+  - ![Screen Shot 2021-07-24 at 12 09 50 AM](https://user-images.githubusercontent.com/32129905/126856867-07252935-5240-47ed-952d-648b6c9505da.png)
+  - [python编程【环境篇】- 如何优雅的管理python的版本](https://www.cnblogs.com/zhouliweiblog/p/11497045.html)
+  - [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
+- [Quizlet 6 Draft Pipeline](https://github.com/why2011btv/Quizlet_6)
 
 
 
