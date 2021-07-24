@@ -1,3 +1,8 @@
+## 07/24/2021
+- [Shell字符串拼接（连接、合并）](http://c.biancheng.net/view/1114.html)
+- [一篇教会你写90%的shell脚本](https://zhuanlan.zhihu.com/p/264346586)
+- [curl shell](https://github.com/why2011btv/Quizlet_6/blob/master/te_out/my.sh)
+
 ## 07/23/2021
 - Why does "source venv/bin/activate" not work?
   - <img width="1178" alt="Screen Shot 2021-07-23 at 12 52 02 AM" src="https://user-images.githubusercontent.com/32129905/126738758-6257a0b5-00b9-4fbf-990c-be1bc10468bf.png">
