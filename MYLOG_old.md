@@ -1,5 +1,11 @@
+## 07/26/2021
+- [Shell字符串详解](http://c.biancheng.net/view/821.html)
+  - <img width="1017" alt="Screen Shot 2021-07-26 at 4 40 03 PM" src="https://user-images.githubusercontent.com/32129905/127056053-65f10233-443b-4b8f-8137-a31b31301987.png">
+
+
 ## 07/24/2021
 - [Shell字符串拼接（连接、合并）](http://c.biancheng.net/view/1114.html)
+  - <img width="631" alt="Screen Shot 2021-07-26 at 4 38 06 PM" src="https://user-images.githubusercontent.com/32129905/127055835-7de4cbc3-a29c-4e2d-9b21-fa909d0f4705.png">
 - [一篇教会你写90%的shell脚本](https://zhuanlan.zhihu.com/p/264346586)
 - [curl shell](https://github.com/why2011btv/Quizlet_6/blob/master/te_out/my.sh)
 
