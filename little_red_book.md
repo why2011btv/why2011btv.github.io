@@ -11,6 +11,11 @@
 - lack behind
   - e.g., *However, current AI’s ability in “thinking in pictures” is still far lacking behind.*
 
+## R
+- rectify
+  - e.g., *Relabeling methods use the trained model to incrementally detect possibly noisy labels and rectify them with model predictions.*
+
+
 ## T
 - trait
   - e.g., *This captivating commonplace trait of human cognition*
