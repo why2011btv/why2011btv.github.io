@@ -1,3 +1,17 @@
+## 07/27/2021
+- RoBERTa
+  - cls ([CLS] in BERT), ```'<s>'```, 0
+  - pad, ```'<pad>'```, 1
+  - sep ([SEP] in BERT), ```'</s>'```, 2
+  - unk, ```'<unk>'```, 3
+  - [Reference](https://huggingface.co/transformers/_modules/transformers/tokenization_roberta.html)
+- PairedRL
+  - CLS, sentence1, SEP, sentence2, SEP
+  - HiEve max: 155
+  - IC max: 193
+  
+
+
 ## 07/26/2021
 - [Shell字符串详解](http://c.biancheng.net/view/821.html)
   - <img width="1017" alt="Screen Shot 2021-07-26 at 4 40 03 PM" src="https://user-images.githubusercontent.com/32129905/127056053-65f10233-443b-4b8f-8137-a31b31301987.png">
