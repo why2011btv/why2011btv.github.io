@@ -9,6 +9,8 @@
   - CLS, sentence1, SEP, sentence2, SEP
   - HiEve max: 155
   - IC max: 193
+- BigBird
+  - [BigBird](https://huggingface.co/transformers/model_doc/bigbird.html), is a sparse-attention based transformer which extends Transformer based models, such as BERT to much longer sequences. In addition to sparse attention, BigBird also applies global attention as well as random attention to the input sequence. Theoretically, it has been shown that applying sparse, global, and random attention approximates full attention, while being computationally much more efficient for longer sequences. As a consequence of the capability to handle longer context, BigBird has shown improved performance on various long document NLP tasks, such as question answering and summarization, compared to BERT or RoBERTa.
   
 
 
