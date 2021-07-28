@@ -1,3 +1,12 @@
+## 07/28/2021
+- GPT-3 size
+  - Ada 350M
+  - Babbage 1.3B
+  - Curie 6.7B
+  - Davinci 175B
+  - [Reference](https://blog.eleuther.ai/gpt3-model-sizes/)
+
+
 ## 07/27/2021
 - RoBERTa
   - cls ([CLS] in BERT), ```'<s>'```, 0
