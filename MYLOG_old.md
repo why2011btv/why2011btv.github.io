@@ -10,6 +10,10 @@
   - As you have seen above, RoBERTa uses a different tokenizer than the one used by BERT: byte-level BPE vs WordPiece. Here are the main differences between the two:
     - RoBERTa’s default tokenizer works at the byte-level vs word pieces for BERT.
     - RoBERTa’s tokenizer keeps all combined tokens (up to the vocabulary max size) whereas BERT’s only keeps those that increase 
+- Acronym
+  - tl;dr
+  - ![1101611_1_0501-tldr-inaword_standard](https://user-images.githubusercontent.com/32129905/129098144-dd423188-d0bc-4ae4-81cd-32da17fc11ed.jpg)
+
 
 ## 07/28/2021
 - GPT-3 size
