@@ -1,6 +1,15 @@
 ## 08/11/2021
 - GPT-3 usage
   - [link](https://www.reddit.com/r/GPT3/comments/kkp2py/17_examples_of_completions_from_the_new_gpt3/)
+- Attention Mechanism
+  - [The Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
+- TPU
+  - [RoBERTa meets TPUs](https://yassinealouini.medium.com/roberta-meets-tpus-af839ce7c070)
+- Difference between BERT & RoBERTa
+  - [BPE](https://medium.com/@pierre_guillou/byte-level-bpe-an-universal-tokenizer-but-aff932332ffe)
+  - As you have seen above, RoBERTa uses a different tokenizer than the one used by BERT: byte-level BPE vs WordPiece. Here are the main differences between the two:
+    - RoBERTa’s default tokenizer works at the byte-level vs word pieces for BERT.
+    - RoBERTa’s tokenizer keeps all combined tokens (up to the vocabulary max size) whereas BERT’s only keeps those that increase 
 
 ## 07/28/2021
 - GPT-3 size
