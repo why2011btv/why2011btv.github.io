@@ -1,3 +1,7 @@
+## 08/11/2021
+- GPT-3 usage
+  - [link](https://www.reddit.com/r/GPT3/comments/kkp2py/17_examples_of_completions_from_the_new_gpt3/)
+
 ## 07/28/2021
 - GPT-3 size
   - Ada 350M
