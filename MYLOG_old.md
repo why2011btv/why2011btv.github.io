@@ -1,3 +1,13 @@
+## 08/15/2021
+- SLURM batch scripts tutorial
+  - [video link](https://youtu.be/LRJMQO7Ercw)
+  - <img width="1792" alt="Screen Shot 2021-08-15 at 9 23 07 PM" src="https://user-images.githubusercontent.com/32129905/129499719-412013eb-cbdc-4f77-b271-426e6d13f543.png">
+  - <img width="1792" alt="Screen Shot 2021-08-15 at 9 22 54 PM" src="https://user-images.githubusercontent.com/32129905/129499727-151061aa-15a9-42d5-8462-a9872332c1a4.png">
+  - <img width="1792" alt="Screen Shot 2021-08-15 at 9 22 28 PM" src="https://user-images.githubusercontent.com/32129905/129499744-af9249fd-d3fd-4e16-83cf-bee8536b470f.png">
+
+
+
+
 ## 08/11/2021
 - GPT-3 usage
   - [link](https://www.reddit.com/r/GPT3/comments/kkp2py/17_examples_of_completions_from_the_new_gpt3/)
