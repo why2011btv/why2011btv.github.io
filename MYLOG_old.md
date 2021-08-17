@@ -3,6 +3,8 @@
   - [Joint Detection and Coreference Resolution of Entities and Events with Document-level Context Aggregation](https://aclanthology.org/2021.acl-srw.18/)
   - [Document-level Event Extraction via Parallel Prediction Networks](https://aclanthology.org/2021.acl-long.492/)
   - [Document-level Event Extraction via Heterogeneous Graph-based Interaction Model with a Tracker](https://aclanthology.org/2021.acl-long.274/)
+- Nominal SRL
+  - [Unsupervised Transfer of Semantic Role Models from Verbal to Nominal Domain](https://arxiv.org/pdf/2005.00278.pdf)
 
 ## 08/15/2021
 - SLURM batch scripts tutorial
