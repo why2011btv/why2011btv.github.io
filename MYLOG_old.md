@@ -1,3 +1,9 @@
+## 08/16/2021
+- Document-level IE
+  - [Joint Detection and Coreference Resolution of Entities and Events with Document-level Context Aggregation](https://aclanthology.org/2021.acl-srw.18/)
+  - [Document-level Event Extraction via Parallel Prediction Networks](https://aclanthology.org/2021.acl-long.492/)
+  - [Document-level Event Extraction via Heterogeneous Graph-based Interaction Model with a Tracker](https://aclanthology.org/2021.acl-long.274/)
+
 ## 08/15/2021
 - SLURM batch scripts tutorial
   - [video link](https://youtu.be/LRJMQO7Ercw)
