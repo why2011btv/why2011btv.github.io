@@ -1,3 +1,8 @@
+## 09/01/2021
+- Stats about HiEve & IC
+  - max event num in a doc: article-15708.tsvx 102; NYT_ENG_20050312.0073 103
+  - max doc_to_TransformerTokenIDs(): 1313; 1533
+
 ## 08/16/2021
 - Document-level IE
   - [Joint Detection and Coreference Resolution of Entities and Events with Document-level Context Aggregation](https://aclanthology.org/2021.acl-srw.18/)
