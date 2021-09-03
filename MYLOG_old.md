@@ -1,3 +1,8 @@
+## 09/03/2021
+- [BigBird](https://huggingface.co/blog/big-bird)
+- raise Exception('My error!')
+- [apex](https://github.com/NVIDIA/apex)
+
 ## 09/02/2021
 - [TACRED Revisited](https://arxiv.org/abs/2004.14855)
 
