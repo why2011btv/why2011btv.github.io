@@ -1,3 +1,6 @@
+## 09/02/2021
+- [TACRED Revisited](https://arxiv.org/abs/2004.14855)
+
 ## 09/01/2021
 - Stats about HiEve & IC
   - max event num in a doc: article-15708.tsvx 102; NYT_ENG_20050312.0073 103
