@@ -1,5 +1,7 @@
 ## 09/03/2021
 - [BigBird](https://huggingface.co/blog/big-bird)
+  - <img width="808" alt="Screen Shot 2021-09-03 at 1 51 47 AM" src="https://user-images.githubusercontent.com/32129905/131957028-d7456023-26e5-4c12-9fcc-89ff7bf4bfd8.png">
+  
 - raise Exception('My error!')
 - [apex](https://github.com/NVIDIA/apex)
 
