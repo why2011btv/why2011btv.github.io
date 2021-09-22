@@ -1,5 +1,5 @@
 ## 09/22/2021
-- Understanding VAE
+- [Understanding VAE](https://arxiv.org/pdf/1907.08956.pdf)
   - x<sub>i</sub>: a data point, e.g., a twitter feed
   - z: latent variable, e.g., the emotion distribution, "happy: 0.3, fear: 0.1, ..."
   - &Theta;: neural network weights (encoder)
