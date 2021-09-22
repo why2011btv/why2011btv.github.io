@@ -5,6 +5,9 @@
   - Since KL(Q||P)≥0, logp(x) must be greater than L. Therefore L is a lower bound for logp(x). L is also referred to as evidence lower bound (ELBO)
 - [Variational Autoencoders](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
   - So, in order to be able to use the decoder of our autoencoder for generative purpose, we have to be sure that the latent space is regular enough. One possible solution to obtain such regularity is to introduce explicit regularisation during the training process. Thus, as we briefly mentioned in the introduction of this post, a variational autoencoder can be defined as being an autoencoder whose training is regularised to avoid overfitting and ensure that the latent space has good properties that enable generative process.
+  - Regularity of latent space:
+    -  ![1*83S0T8IEJyudR_I5rI9now@2x](https://user-images.githubusercontent.com/32129905/134374541-b2a996db-f272-410d-a0cb-02072b527dcb.png)
+
 
 
 ## 09/03/2021
