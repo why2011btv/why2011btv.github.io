@@ -1,3 +1,12 @@
+## 09/22/2021
+- [Variational Inference & ELBO](https://blog.evjang.com/2016/08/variational-bayes.html)
+  - Given this twitter feed X, is the author depressed (latent variable Z)?
+  - The idea behind variational inference is this: let's just perform inference on an easy, parametric distribution Qϕ(Z|X) (like a Gaussian) for which we know how to do posterior inference, but adjust the parameters ϕ so that Qϕ is as close to P as possible.
+  - Since KL(Q||P)≥0, logp(x) must be greater than L. Therefore L is a lower bound for logp(x). L is also referred to as evidence lower bound (ELBO)
+- [Variational Autoencoders](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
+  - So, in order to be able to use the decoder of our autoencoder for generative purpose, we have to be sure that the latent space is regular enough. One possible solution to obtain such regularity is to introduce explicit regularisation during the training process. Thus, as we briefly mentioned in the introduction of this post, a variational autoencoder can be defined as being an autoencoder whose training is regularised to avoid overfitting and ensure that the latent space has good properties that enable generative process.
+
+
 ## 09/03/2021
 - [BigBird](https://huggingface.co/blog/big-bird)
   - <img width="808" alt="Screen Shot 2021-09-03 at 1 51 47 AM" src="https://user-images.githubusercontent.com/32129905/131957028-d7456023-26e5-4c12-9fcc-89ff7bf4bfd8.png">
