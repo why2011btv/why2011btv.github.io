@@ -1,4 +1,13 @@
 ## 09/22/2021
+- Understanding VAE
+  - x<sub>i</sub>: a data point, e.g., a twitter feed
+  - z: latent variable, e.g., the emotion distribution, "happy: 0.3, fear: 0.1, ..."
+  - &Theta;: neural network weights (encoder)
+  - &phi;: neural network weights (decoder)
+  - real posterior (what we want): p(z|x<sub>i</sub>) 
+  - approximate of posterior: q<sub>&Theta;</sub>(z|x<sub>i</sub>) 
+
+## 09/21/2021
 - [Variational Inference & ELBO](https://blog.evjang.com/2016/08/variational-bayes.html)
   - Given this twitter feed X, is the author depressed (latent variable Z)?
   - The idea behind variational inference is this: let's just perform inference on an easy, parametric distribution Qϕ(Z|X) (like a Gaussian) for which we know how to do posterior inference, but adjust the parameters ϕ so that Qϕ is as close to P as possible.
