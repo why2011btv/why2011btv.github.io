@@ -1,7 +1,11 @@
 ## 09/28/2021
 - Price for using GPT-J-6B on nlpcloud.io
   - <img width="1792" alt="Screen Shot 2021-09-28 at 3 50 20 PM" src="https://user-images.githubusercontent.com/32129905/135156095-41d273eb-9ae8-4f6b-a202-77ccf520a2f8.png">
-
+- [Variational Bayes](https://blog.evjang.com/2016/08/variational-bayes.html)
+- [torch index_select](https://pytorch.org/docs/stable/generated/torch.index_select.html)
+- [tf einsum](https://www.tensorflow.org/api_docs/python/tf/einsum)
+- [opt_einsum](https://optimized-einsum.readthedocs.io/en/stable/autosummary/opt_einsum.contract.html)
+- [Wide Narrow Reading of Events](http://cairo.lti.cs.cmu.edu/kbp/2017/event/TAC_KBP_2017_Event_Coreference_and_Sequence_Annotation_Guidelines_v1.1.pdf)
 
 ## 09/22/2021
 - [Understanding VAE](https://arxiv.org/pdf/1907.08956.pdf)
