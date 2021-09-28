@@ -6,6 +6,7 @@
 - [tf einsum](https://www.tensorflow.org/api_docs/python/tf/einsum)
 - [opt_einsum](https://optimized-einsum.readthedocs.io/en/stable/autosummary/opt_einsum.contract.html)
 - [Wide Narrow Reading of Events](http://cairo.lti.cs.cmu.edu/kbp/2017/event/TAC_KBP_2017_Event_Coreference_and_Sequence_Annotation_Guidelines_v1.1.pdf)
+- [Understanding VAE](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
 
 ## 09/22/2021
 - [Understanding VAE](https://arxiv.org/pdf/1907.08956.pdf)
