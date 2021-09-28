@@ -1,3 +1,8 @@
+## 09/28/2021
+- Price for using GPT-J-6B on nlpcloud.io
+  - <img width="1792" alt="Screen Shot 2021-09-28 at 3 50 20 PM" src="https://user-images.githubusercontent.com/32129905/135156095-41d273eb-9ae8-4f6b-a202-77ccf520a2f8.png">
+
+
 ## 09/22/2021
 - [Understanding VAE](https://arxiv.org/pdf/1907.08956.pdf)
   - x<sub>i</sub>: a data point, e.g., a twitter feed
