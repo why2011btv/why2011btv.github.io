@@ -1,3 +1,6 @@
+## 10/19/2021
+[.gitignore not ignoring files](https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files)
+
 ## 09/28/2021
 - Price for using GPT-J-6B on nlpcloud.io
   - <img width="1792" alt="Screen Shot 2021-09-28 at 3 50 20 PM" src="https://user-images.githubusercontent.com/32129905/135156095-41d273eb-9ae8-4f6b-a202-77ccf520a2f8.png">
