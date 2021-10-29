@@ -1,5 +1,8 @@
 # My Little Red Book for Academic Writing
-
+## A
+- account
+  - *noun*: a report or description of an event or experience.
+  - e.g., *a detailed account of what has been achieved*
 ## D
 
 
