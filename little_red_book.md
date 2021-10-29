@@ -1,7 +1,7 @@
 # My Little Red Book for Academic Writing
 ## A
 - account
-  - *noun*: a report or description of an event or experience.
+  - *noun*, a report or description of an event or experience.
   - e.g., *a detailed account of what has been achieved*
 ## D
 
@@ -24,7 +24,7 @@
 ## M
 ## N
 - narrative
-  - *noun*: a spoken or written account of connected events; a story.
+  - *noun*, a spoken or written account of connected events; a story.
 
 
 ## R
