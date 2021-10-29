@@ -14,6 +14,9 @@
 ## G
 ## H
 ## I 
+- incidental
+  - *adjective*, accompanying but not a major part of something.
+  - e.g., *for the fieldworker who deals with real problems, paperwork is incidental*
 ## J
 ## K
 ## L
