@@ -7,11 +7,21 @@
 - envisage
   - e.g., *spatial-temporal reasoning depends on envisaging the possibilities consistent with the relations between objects*
 
+## F
+## G
+## H
+## I 
+## J
+## K
 ## L
 - lack behind
   - e.g., *However, current AI’s ability in “thinking in pictures” is still far lacking behind.*
 - inter alia
   - e.g., *(Chambers and Jurafsky, 2008; Modi et al., 2017, inter alia)*
+## M
+## N
+- narrative
+  - *noun*: a spoken or written account of connected events; a story.
 
 
 ## R
