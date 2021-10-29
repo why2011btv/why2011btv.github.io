@@ -10,6 +10,9 @@
 ## L
 - lack behind
   - e.g., *However, current AI’s ability in “thinking in pictures” is still far lacking behind.*
+- inter alia
+  - e.g., *(Chambers and Jurafsky, 2008; Modi et al., 2017, inter alia)*
+
 
 ## R
 - rectify
