@@ -1,3 +1,7 @@
+## 10/30/2021
+- Mojave text selection too dark in Preview 
+  - [Solution](https://www.techjunkie.com/exclude-app-dark-mode-macos-mojave/)
+
 ## 10/19/2021
 [.gitignore not ignoring files](https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files)
 
