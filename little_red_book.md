@@ -3,6 +3,10 @@
 - account
   - *noun*, a report or description of an event or experience.
   - e.g., *a detailed account of what has been achieved*
+## C
+- corroborate
+  - *verb*, confirm or give support to (a statement, theory, or finding)
+  - e.g., *Other works have corroborated some of these findings*
 ## D
 
 
