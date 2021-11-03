@@ -5,7 +5,7 @@
   - [A General-Purpose Algorithm for Constrained Sequential Inference](https://aclanthology.org/K19-1045.pdf)
   - [Learning to Write with Cooperative Discriminators](https://aclanthology.org/P18-1152.pdf)
   - [Generating More Interesting Responses in Neural Conversation Models with Distributional Constraints](https://arxiv.org/pdf/1809.01215.pdf)
-  - [https://aclanthology.org/P17-4008.pdf](https://aclanthology.org/P17-4008.pdf)
+  - [Hafez: an Interactive Poetry Generation System](https://aclanthology.org/P17-4008.pdf)
   - [Controllable Neural Text Generation](https://lilianweng.github.io/lil-log/2021/01/02/controllable-neural-text-generation.html)
 
 
