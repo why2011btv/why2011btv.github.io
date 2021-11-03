@@ -14,7 +14,12 @@
   - [Connecting the Dots: Event Graph Schema Induction with Path Language Modeling](https://aclanthology.org/2020.emnlp-main.50.pdf)
   - [Future is not One-dimensional: Graph Modeling based Complex Event Schema Induction for Event Prediction](https://arxiv.org/pdf/2104.06344.pdf)
 
+- Probing
+  - [Probing Natural Language Inference Models through Semantic Fragments](https://arxiv.org/pdf/1909.07521.pdf)
+  - [Probing Across Time: What Does RoBERTa Know and When?](https://arxiv.org/pdf/2104.07885.pdf)
 
+- Reasoning
+  - [What’s Missing: A Knowledge Gap Guided Approach for Multi-hop Question Answering](https://aclanthology.org/D19-1281.pdf)
 ## 10/30/2021
 - Mojave text selection too dark in Preview 
   - [Solution](https://www.techjunkie.com/exclude-app-dark-mode-macos-mojave/)
