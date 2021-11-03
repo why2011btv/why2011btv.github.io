@@ -1,3 +1,20 @@
+## 11/03/2021
+- Controlled Generation
+  - [A Hybrid Model for Globally Coherent Story Generation](https://aclanthology.org/W19-3404.pdf)
+  - [Constrained Labeled Data Generation for Low-Resource Named Entity Recognition](https://aclanthology.org/2021.findings-acl.396.pdf)
+  - [A General-Purpose Algorithm for Constrained Sequential Inference](https://aclanthology.org/K19-1045.pdf)
+  - [Learning to Write with Cooperative Discriminators](https://aclanthology.org/P18-1152.pdf)
+  - [Generating More Interesting Responses in Neural Conversation Models with Distributional Constraints](https://arxiv.org/pdf/1809.01215.pdf)
+  - [https://aclanthology.org/P17-4008.pdf](https://aclanthology.org/P17-4008.pdf)
+  - [Controllable Neural Text Generation](https://lilianweng.github.io/lil-log/2021/01/02/controllable-neural-text-generation.html)
+
+
+- Schema Induction
+  - [Machine-Assisted Script Curation](https://aclanthology.org/2021.naacl-demos.2.pdf)
+  - [Connecting the Dots: Event Graph Schema Induction with Path Language Modeling](https://aclanthology.org/2020.emnlp-main.50.pdf)
+  - [Future is not One-dimensional: Graph Modeling based Complex Event Schema Induction for Event Prediction](https://arxiv.org/pdf/2104.06344.pdf)
+
+
 ## 10/30/2021
 - Mojave text selection too dark in Preview 
   - [Solution](https://www.techjunkie.com/exclude-app-dark-mode-macos-mojave/)
