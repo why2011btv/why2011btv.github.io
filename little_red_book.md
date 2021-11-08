@@ -3,7 +3,7 @@
 - account
   - *noun*, a report or description of an event or experience.
   - e.g., *a detailed account of what has been achieved*
--aggravate
+- aggravate
   - *verb*, make (a problem, injury, or offense) worse or more serious.
   - e.g., *The model's majority label bias is aggravated by its recency bias*
 ## C
