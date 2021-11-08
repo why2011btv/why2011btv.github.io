@@ -1,3 +1,7 @@
+## 11/08/2021
+- Google mail smtp 
+  - [less secure apps](https://www.google.com/settings/security/lesssecureapps)
+
 ## 11/03/2021
 - Controlled Generation
   - [A Hybrid Model for Globally Coherent Story Generation](https://aclanthology.org/W19-3404.pdf)
