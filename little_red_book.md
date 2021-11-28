@@ -10,6 +10,9 @@
 - corroborate
   - *verb*, confirm or give support to (a statement, theory, or finding)
   - e.g., *Other works have corroborated some of these findings*
+- conflate
+  - *verb*, combine (two or more texts, ideas, etc.) into one.
+  - e.g., *the urban crisis conflates a number of different economic and social issues*
 ## D
 
 
