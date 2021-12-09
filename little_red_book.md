@@ -123,8 +123,46 @@
   - Help determine worst, best, and expected values for different scenarios.
   - Use a white box model. If a given result is provided by a model.
 18. Transformer
-  - Transformer architecture ditched the recurrence mechanism in favor of multi-head self-attention mechanism => FASTER processing
+  - Transformer architecture ditched the recurrence mechanism in favor of multi-head self-attention mechanism => FASTER processing, can attend to long-distance context; 1-D convolutions don't have memory, and it only processes local context
   - positional encoding: As each word in a sentence simultaneously flows through the Transformer’s encoder/decoder stack, The model itself doesn’t have any sense of position/order for each word. Consequently, there’s still the need for a way to incorporate the order of the words into our model => Transformers hold the potential to understand the relationshipbetween sequential elements that are far from each other.
   - Transformers serve to be helpful in anomaly detection.
+  - <img width="420" alt="Screen Shot 2021-12-09 at 7 06 14 AM" src="https://user-images.githubusercontent.com/32129905/145393526-4d3dfe1e-7d86-4094-beac-405d2839da9a.png">
+  - Self-attention:
+    - far-away inputs can influence output at t
+    - influence no longer just a function of relative position s-t
+    - input transformed first through f(.)
+
 19. Word2Vec How is it trained? Loss function?
   - <img width="717" alt="Screen Shot 2021-12-08 at 9 50 10 PM" src="https://user-images.githubusercontent.com/32129905/145325601-26ce67ac-1496-41ed-95b4-2be2c73b1ac1.png">
+  - Essentially, this is a multi-class classification problem. Outputs are one-hot vectors. Loss: standard softmax loss.
+  - Instead of summing over the size of vocabulary, randomly sampling to approximate the denominator (since the correct value of the numerator should be a lot higher than the other values, particularly it should be higher than random samples). In this way, fewer weights need to be updated during each iteration of gradient descent.
+  - Word2Vec representation is fixed, so it is not contextual in usage. The representation for a multi-meaning word is the same under different context.
+  - CBOW: predicts central word, basing on surrounding words.
+  - Skip-Gram: indicates the context (surrounding words) using selected, single words.
+20. PCA
+  - reduce the dimension of your feature space.
+22. SVD
+23. LDA
+24. Boosting
+  - ![0*6AINiXpqj_O98Kf-](https://user-images.githubusercontent.com/32129905/145491326-e3bc390e-76f1-46be-8bb1-7fb87d69893a.png)
+  - weighted majority vote
+  - models with low error are weighted more than those with high error
+  - reweighting the dataset
+26. AdaBoost: It iteratively adds classifiers, each time reweighting the dataset to focus the next classifier on where the current set makes errors.
+27. Bagging: short for "bootstrap aggregating", yields smaller variance
+  - bootstrap: random sampling with replacement 
+  - ![0*Wjdc5fBd53V108Qn](https://user-images.githubusercontent.com/32129905/145491070-95d2d97b-c10c-4514-b0fc-655c0621660b.png)
+样本选择上：
+Bagging：训练集是在原始集中有放回选取的，从原始集中选出的各轮训练集之间是独立的。
+Boosting：每一轮的训练集不变，只是训练集中每个样例在分类器中的权重发生变化。而权值是根据上一轮的分类结果进行调整。
+样例权重：
+Bagging：使用均匀取样，每个样例的权重相等
+Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。
+预测函数：
+Bagging：所有预测函数的权重相等。
+Boosting：每个弱分类器都有相应的权重，对于分类误差小的分类器会有更大的权重。
+并行计算：
+Bagging：各个预测函数可以并行生成
+Boosting：各个预测函数只能顺序生成，因为后一个模型参数需要前一轮模型的结果。
+28. Random Forests: an ensemble method that combines decision trees;
+29. Ensemble
