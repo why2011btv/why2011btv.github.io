@@ -95,6 +95,13 @@
     - Assign each data point to the closest cluster (centroid).
     - Compute the centroids for the clusters by taking the average of the all data points that belong to each cluster.
  12. Explain differences between linear and logistic regression. 
-  - <img width="876" alt="Screen Shot 2021-12-08 at 9 09 28 PM" src="https://user-images.githubusercontent.com/32129905/145321542-21d7ce61-a8fd-4618-80f0-96ce9ad46ee9.png">
+  - The Similarities between Linear Regression and Logistic Regression
+    - Linear Regression and Logistic Regression both are supervised Machine Learning algorithms.
+    - Linear Regression and Logistic Regression, both the models are parametric regression i.e. both the models use linear equations for predictions
+  - The Differences between Linear Regression and Logistic Regression
+    - Linear Regression is used to handle regression problems whereas Logistic regression is used to handle the classification problems.
+    - Linear regression provides a continuous output but Logistic regression provides discreet output.
+    - The purpose of Linear Regression is to find the best-fitted line while Logistic regression is one step ahead and fitting the line values to the sigmoid curve.
+    - The method for calculating loss function in linear regression is the mean squared error whereas for logistic regression it is maximum likelihood estimation.
   - maximum likelihood estimation (MLE) is a method of estimating the parameters of an assumed probability distribution, given some observed data. 
  
