@@ -94,7 +94,7 @@
     - Compute the sum of the squared distance between data points and all centroids.
     - Assign each data point to the closest cluster (centroid).
     - Compute the centroids for the clusters by taking the average of the all data points that belong to each cluster.
- 12. Explain differences between linear and logistic regression. 
+12. Explain differences between linear and logistic regression. 
   - The Similarities between Linear Regression and Logistic Regression
     - Linear Regression and Logistic Regression both are supervised Machine Learning algorithms.
     - Linear Regression and Logistic Regression, both the models are parametric regression i.e. both the models use linear equations for predictions
@@ -104,4 +104,27 @@
     - The purpose of Linear Regression is to find the best-fitted line while Logistic regression is one step ahead and fitting the line values to the sigmoid curve.
     - The method for calculating loss function in linear regression is the mean squared error whereas for logistic regression it is maximum likelihood estimation.
   - maximum likelihood estimation (MLE) is a method of estimating the parameters of an assumed probability distribution, given some observed data. 
- 
+13. There are 3 main metrics for model evaluation in regression:
+  - R Square/Adjusted R Square
+  - Mean Square Error(MSE)/Root Mean Square Error(RMSE)
+  - Mean Absolute Error(MAE)
+14. What’s the equivalent of R^2 in logistic regression? Pseudo R^2: log-linear ratio R^2; Cox and Snell's R^2; Nagelkerke’s R2
+15. What’re the common metrics for evaluating logistic regression models? Accuracy, Precision, Recall, Confusion Matrix
+16. Should we rescale features before gradient descent? Why?
+  - If an algorithm uses gradient descent, then the difference in ranges of features will cause different step sizes for each feature. To ensure that the gradient descent moves smoothly towards the minima and that the steps for gradient descent are updated at the same rate for all the features, we scale the data before feeding it to the model. Having features on a similar scale will help the gradient descent converge more quickly towards the minima.
+  - Specifically, in the case of Neural Networks Algorithms, feature scaling benefits optimization by:
+    - It makes the training faster
+    - It prevents the optimization from getting stuck in local optima
+    - It gives a better error surface shape
+    - Weight decay (lambda for L2-regularization) and Bayes optimization can be done more conveniently
+17. Advantages of decision trees:
+  - Are simple to understand and interpret. People are able to understand decision tree models after a brief explanation.
+  - Have value even with little hard data. Important insights can be generated based on experts describing a situation (its alternatives, probabilities, and costs) and their preferences for outcomes.
+  - Help determine worst, best, and expected values for different scenarios.
+  - Use a white box model. If a given result is provided by a model.
+18. Transformer
+  - Transformer architecture ditched the recurrence mechanism in favor of multi-head self-attention mechanism => FASTER processing
+  - positional encoding: As each word in a sentence simultaneously flows through the Transformer’s encoder/decoder stack, The model itself doesn’t have any sense of position/order for each word. Consequently, there’s still the need for a way to incorporate the order of the words into our model => Transformers hold the potential to understand the relationshipbetween sequential elements that are far from each other.
+  - Transformers serve to be helpful in anomaly detection.
+19. Word2Vec How is it trained? Loss function?
+  - <img width="717" alt="Screen Shot 2021-12-08 at 9 50 10 PM" src="https://user-images.githubusercontent.com/32129905/145325601-26ce67ac-1496-41ed-95b4-2be2c73b1ac1.png">
