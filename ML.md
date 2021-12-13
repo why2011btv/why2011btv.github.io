@@ -1,4 +1,7 @@
-
+# CIS 520 Review
+1. SVD, left single vector, eigenvector
+2. GAN
+3. 
 
 # Interview Questions
 1. What is gradient descent? Write the formula of weight update.
