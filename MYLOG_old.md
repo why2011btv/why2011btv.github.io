@@ -2,6 +2,7 @@
 - Now we have tools for estimating uncertainty in neural networks. How can we apply to unanswerable questions?
   - In image classification, there are fixed number of labels, e.g., cat, dog, human, car, and so forth. Out-of-distribution testing examples can be unseen categories in the training data, or foggy / blurry pictures. 
   - In extractive Question Answering, enumerating over all possible spans of the context passage is computationally costly. Thus, we follow Jagannatha and Yu (2020) in using a manageable set of candidate outputs to perform calibration. We finally keep the top K spans as candidates I(X) and use all candidates to calculate the normalized probability which provides some idea of the confidence of answer $^{Y}$ with respect to the candidate list.
+  - <img src="https://render.githubusercontent.com/render/math?math=x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}">
 
 
 ## 12/13/2021
