@@ -2,7 +2,7 @@
 - Predictive Uncertainty Estimation via Prior Networks
   - Model Uncertainty: given training data D, the probability of finding the perfect model \theta for the task
     - Cause: how well the model is matched to the training data
-  - Distributional Uncertainty: given an example input x* and the perfect model $\theta$, the probability of getting the perfect categorical distribution $\mu$ over class labels
+  - Distributional Uncertainty: given an example (test) input x* and the perfect model $\theta$, the probability of getting the perfect categorical distribution $\mu$ over class labels
     - Cause: difference between training and test data
   - Data Uncertainty: given the categorical distribution, the probability of getting the right prediction. 
     - Cause: class overlap, label noise
