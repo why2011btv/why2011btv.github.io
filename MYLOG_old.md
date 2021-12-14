@@ -3,6 +3,10 @@
 - Now we have tools for estimating uncertainty in neural networks. How can we apply to unanswerable questions?
   - In image classification, there are fixed number of labels, e.g., cat, dog, human, car, and so forth. Out-of-distribution testing examples can be unseen categories in the training data, or foggy / blurry pictures. 
   - In extractive Question Answering, enumerating over all possible spans of the context passage is computationally costly. Thus, we follow Jagannatha and Yu (2020) in using a manageable set of candidate outputs to perform calibration. We finally keep the top K spans as candidates I(X) and use all candidates to calculate the normalized probability which provides some idea of the confidence of answer <img src="https://render.githubusercontent.com/render/math?math=\hat{Y}"> with respect to the candidate list.
+  - Calibration: Fixed set of answers in image classification VS Changeable answers in QA
+    - We approximate this probability by bucketing predictions into M disjoint equally-sized interval bins based on confidence.
+    - It doesn't matter whether the outputs are fixed categories or changeable answers (spans from different input context). As long as the model outputs probabilities for different candidates, ECE can be calculated.
+    - For example, there are 3 cases for prediction, the probability predicted for the correct answer is 0.3, 0.6, 0.9; whereas we split into 2 buckets, 0-0.5 and 0.5-1. 
   
 
 
