@@ -1,8 +1,9 @@
 ## 12/13/2021
-- <img width="1001" alt="Screen Shot 2021-12-13 at 11 53 48 PM" src="https://user-images.githubusercontent.com/32129905/145935431-43cc7f59-b0af-450c-bb98-52efe42f04b2.png">
+- Predictive Uncertainty Estimation via Prior Networks
   - Model Uncertainty: given training data D, the probability we can find the perfect model $\theta$ for the task
   - Distributional Uncertainty: given an example input x* and the perfect model $\theta$, the probability of getting the perfect categorical distribution $\mu$ over class labels
   - Data Uncertainty: given the categorical distribution, the probability of getting the right prediction
+  - <img width="1001" alt="Screen Shot 2021-12-13 at 11 53 48 PM" src="https://user-images.githubusercontent.com/32129905/145935431-43cc7f59-b0af-450c-bb98-52efe42f04b2.png">
 
 ## 11/08/2021
 - Google mail smtp 
