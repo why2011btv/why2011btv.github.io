@@ -6,8 +6,8 @@
 5. Q-learning: https://mofanpy.com/tutorials/machine-learning/reinforcement-learning/intro-sarsa/
 6. EM: https://blog.csdn.net/zouxy09/article/details/8537620
 7. 继续深入讲解贝叶斯方法之前，先简单总结下频率派与贝叶斯派各自不同的思考方式：
-  - 频率派把需要推断的参数θ看做是固定的未知常数，即概率虽然是未知的，但最起码是确定的一个值，同时，样本X 是随机的，所以频率派重点研究样本空间，大部分的概率计算都是针对样本X 的分布；
-  - 而贝叶斯派的观点则截然相反，他们认为参数是随机变量，而样本X 是固定的，由于样本是固定的，所以他们重点研究的是参数的分布。
+    - 频率派把需要推断的参数θ看做是固定的未知常数，即概率虽然是未知的，但最起码是确定的一个值，同时，样本X 是随机的，所以频率派重点研究样本空间，大部分的概率计算都是针对样本X 的分布；
+    - 而贝叶斯派的观点则截然相反，他们认为参数是随机变量，而样本X 是固定的，由于样本是固定的，所以他们重点研究的是参数的分布。
     
 # Interview Questions
 1. What is gradient descent? Write the formula of weight update.
