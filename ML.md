@@ -5,7 +5,8 @@
 4. GMM
 5. Q-learning: https://mofanpy.com/tutorials/machine-learning/reinforcement-learning/intro-sarsa/
 6. EM: https://blog.csdn.net/zouxy09/article/details/8537620
-7. 继续深入讲解贝叶斯方法之前，先简单总结下频率派与贝叶斯派各自不同的思考方式：
+7. Bayesian Belief Networks: https://blog.csdn.net/bluebelfast/article/details/51509223
+    - 先简单总结下频率派与贝叶斯派各自不同的思考方式：
     - 频率派把需要推断的参数θ看做是固定的未知常数，即概率虽然是未知的，但最起码是确定的一个值，同时，样本X 是随机的，所以频率派重点研究样本空间，大部分的概率计算都是针对样本X 的分布；
     - 而贝叶斯派的观点则截然相反，他们认为参数是随机变量，而样本X 是固定的，由于样本是固定的，所以他们重点研究的是参数的分布。
     - <img width="1609" alt="Screen Shot 2021-12-15 at 12 39 05 PM" src="https://user-images.githubusercontent.com/32129905/146237095-019dbe28-48df-4a85-93ed-7f5e693def85.png">
