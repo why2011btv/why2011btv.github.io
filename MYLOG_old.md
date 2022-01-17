@@ -1,3 +1,102 @@
+## 12/14/2021
+- <img src="https://render.githubusercontent.com/render/math?math=x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}">
+- Now we have tools for estimating uncertainty in neural networks. How can we apply to unanswerable questions?
+  - In image classification, there are fixed number of labels, e.g., cat, dog, human, car, and so forth. Out-of-distribution testing examples can be unseen categories in the training data, or foggy / blurry pictures. 
+  - In extractive Question Answering, enumerating over all possible spans of the context passage is computationally costly. Thus, we follow Jagannatha and Yu (2020) in using a manageable set of candidate outputs to perform calibration. We finally keep the top K spans as candidates I(X) and use all candidates to calculate the normalized probability which provides some idea of the confidence of answer <img src="https://render.githubusercontent.com/render/math?math=\hat{Y}"> with respect to the candidate list.
+  - Calibration: Fixed set of answers in image classification VS Changeable answers in QA
+    - We approximate this probability by bucketing predictions into M disjoint equally-sized interval bins based on confidence.
+    - It doesn't matter whether the outputs are fixed categories or changeable answers (spans from different input context). As long as the model outputs probabilities for different candidates, ECE can be calculated.
+    - For example, there are 3 cases for prediction, the probability predicted for the correct answer is 0.3, 0.6, 0.9; whereas we split into 2 buckets, 0-0.5 and 0.5-1. 
+  
+
+
+## 12/13/2021
+- Predictive Uncertainty Estimation via Prior Networks
+  - Model Uncertainty: given training data D, the probability of finding the perfect model \theta for the task
+    - Cause: how well the model is matched to the training data
+  - Distributional Uncertainty: given an example (test) input x* and the perfect model $\theta$, the probability of getting the perfect categorical distribution $\mu$ over class labels
+    - Cause: difference between training and test data
+  - Data Uncertainty: given the categorical distribution, the probability of getting the right prediction. 
+    - Cause: class overlap, label noise
+  - <img width="1001" alt="Screen Shot 2021-12-13 at 11 53 48 PM" src="https://user-images.githubusercontent.com/32129905/145935431-43cc7f59-b0af-450c-bb98-52efe42f04b2.png">
+
+## 11/08/2021
+- Google mail smtp 
+  - [less secure apps](https://www.google.com/settings/security/lesssecureapps)
+
+## 11/03/2021
+- Controlled Generation
+  - [A Hybrid Model for Globally Coherent Story Generation](https://aclanthology.org/W19-3404.pdf)
+  - [Constrained Labeled Data Generation for Low-Resource Named Entity Recognition](https://aclanthology.org/2021.findings-acl.396.pdf)
+  - [A General-Purpose Algorithm for Constrained Sequential Inference](https://aclanthology.org/K19-1045.pdf)
+  - [Learning to Write with Cooperative Discriminators](https://aclanthology.org/P18-1152.pdf)
+  - [Generating More Interesting Responses in Neural Conversation Models with Distributional Constraints](https://arxiv.org/pdf/1809.01215.pdf)
+  - [Hafez: an Interactive Poetry Generation System](https://aclanthology.org/P17-4008.pdf)
+  - [Controllable Neural Text Generation](https://lilianweng.github.io/lil-log/2021/01/02/controllable-neural-text-generation.html)
+
+
+- Schema Induction
+  - [Machine-Assisted Script Curation](https://aclanthology.org/2021.naacl-demos.2.pdf)
+  - [Connecting the Dots: Event Graph Schema Induction with Path Language Modeling](https://aclanthology.org/2020.emnlp-main.50.pdf)
+  - [Future is not One-dimensional: Graph Modeling based Complex Event Schema Induction for Event Prediction](https://arxiv.org/pdf/2104.06344.pdf)
+
+- Probing
+  - [Probing Natural Language Inference Models through Semantic Fragments](https://arxiv.org/pdf/1909.07521.pdf)
+  - [Probing Across Time: What Does RoBERTa Know and When?](https://arxiv.org/pdf/2104.07885.pdf)
+
+- Reasoning
+  - [What’s Missing: A Knowledge Gap Guided Approach for Multi-hop Question Answering](https://aclanthology.org/D19-1281.pdf)
+## 10/30/2021
+- Mojave text selection too dark in Preview 
+  - [Solution](https://www.techjunkie.com/exclude-app-dark-mode-macos-mojave/)
+
+## 10/19/2021
+[.gitignore not ignoring files](https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files)
+
+## 09/28/2021
+- Price for using GPT-J-6B on nlpcloud.io
+  - <img width="1792" alt="Screen Shot 2021-09-28 at 3 50 20 PM" src="https://user-images.githubusercontent.com/32129905/135156095-41d273eb-9ae8-4f6b-a202-77ccf520a2f8.png">
+- [Variational Bayes](https://blog.evjang.com/2016/08/variational-bayes.html)
+- [torch index_select](https://pytorch.org/docs/stable/generated/torch.index_select.html)
+- [tf einsum](https://www.tensorflow.org/api_docs/python/tf/einsum)
+- [opt_einsum](https://optimized-einsum.readthedocs.io/en/stable/autosummary/opt_einsum.contract.html)
+- [Wide Narrow Reading of Events](http://cairo.lti.cs.cmu.edu/kbp/2017/event/TAC_KBP_2017_Event_Coreference_and_Sequence_Annotation_Guidelines_v1.1.pdf)
+- [Understanding VAE](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
+- [colab TPU GPU](https://colab.research.google.com/github/zaidalyafeai/Notebooks/blob/master/GPUvsTPU.ipynb#scrollTo=QNh64VMDz1Ks)
+- [haiku](https://github.com/deepmind/dm-haiku)
+- [JAX](https://github.com/google/jax)
+- [GPT-J-6B](https://github.com/kingoflolz/mesh-transformer-jax/#gpt-j-6b)
+- [Deep Metric Learning](https://towardsdatascience.com/the-why-and-the-how-of-deep-metric-learning-e70e16e199c0)
+- [Label Smoothing](https://arxiv.org/pdf/1906.02629.pdf)
+- [Interpretable machine learning](https://christophm.github.io/interpretable-ml-book/taxonomy-of-interpretability-methods.html)
+- [CIS 700 Prof. Ungar](https://docs.google.com/document/d/18rCZKLcCp6bssVS2TPd-mHzMxFCGTG5kP3AkUxLk7Yc/edit)
+- [What-if I ask you to explain: Explaining the effects of perturbations in procedural text](https://aclanthology.org/2020.findings-emnlp.300.pdf)
+- [Explain Yourself! Leveraging Language Models for Commonsense Reasoning](https://aclanthology.org/P19-1487.pdf)
+- [Towards Harnessing Natural Language Generation to Explain Black-box Models](https://aclanthology.org/2020.nl4xai-1.6.pdf)
+- [Explaining Simple Natural Language Inference](https://aclanthology.org/W19-4016.pdf)
+- [AMR IBM](https://github.com/IBM/transition-amr-parser/blob/master/scripts/README.md#install-details)
+
+## 09/22/2021
+- [Understanding VAE](https://arxiv.org/pdf/1907.08956.pdf)
+  - x<sub>i</sub>: a data point, e.g., a twitter feed
+  - z: latent variable, e.g., the emotion distribution, "happy: 0.3, fear: 0.1, ..."
+  - &Theta;: neural network weights (encoder)
+  - &phi;: neural network weights (decoder)
+  - real posterior (what we want): p(z|x<sub>i</sub>) 
+  - approximate of posterior: q<sub>&Theta;</sub>(z|x<sub>i</sub>) 
+
+## 09/21/2021
+- [Variational Inference & ELBO](https://blog.evjang.com/2016/08/variational-bayes.html)
+  - Given this twitter feed X, is the author depressed (latent variable Z)?
+  - The idea behind variational inference is this: let's just perform inference on an easy, parametric distribution Qϕ(Z|X) (like a Gaussian) for which we know how to do posterior inference, but adjust the parameters ϕ so that Qϕ is as close to P as possible.
+  - Since KL(Q||P)≥0, logp(x) must be greater than L. Therefore L is a lower bound for logp(x). L is also referred to as evidence lower bound (ELBO)
+- [Variational Autoencoders](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
+  - So, in order to be able to use the decoder of our autoencoder for generative purpose, we have to be sure that the latent space is regular enough. One possible solution to obtain such regularity is to introduce explicit regularisation during the training process. Thus, as we briefly mentioned in the introduction of this post, a variational autoencoder can be defined as being an autoencoder whose training is regularised to avoid overfitting and ensure that the latent space has good properties that enable generative process.
+  - Regularity of latent space:
+    -  ![1*83S0T8IEJyudR_I5rI9now@2x](https://user-images.githubusercontent.com/32129905/134374541-b2a996db-f272-410d-a0cb-02072b527dcb.png)
+
+
+
 ## 09/03/2021
 - [BigBird](https://huggingface.co/blog/big-bird)
   - <img width="808" alt="Screen Shot 2021-09-03 at 1 51 47 AM" src="https://user-images.githubusercontent.com/32129905/131957028-d7456023-26e5-4c12-9fcc-89ff7bf4bfd8.png">
