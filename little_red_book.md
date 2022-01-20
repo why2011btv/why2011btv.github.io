@@ -6,6 +6,7 @@
 - aggravate
   - *verb*, make (a problem, injury, or offense) worse or more serious.
   - e.g., *The model's majority label bias is aggravated by its recency bias*
+## B
 ## C
 - corroborate
   - *verb*, confirm or give support to (a statement, theory, or finding)
@@ -38,14 +39,24 @@
 ## N
 - narrative
   - *noun*, a spoken or written account of connected events; a story.
-
+## O
+## P
+- paucity
+  - *noun*, the presence of something only in small or insufficient quantities or amounts; scarcity.
+  - e.g., *a paucity of information*
+## Q
 
 ## R
 - rectify
   - e.g., *Relabeling methods use the trained model to incrementally detect possibly noisy labels and rectify them with model predictions.*
 
-
+## S
 ## T
 - trait
   - e.g., *This captivating commonplace trait of human cognition*
-
+## U
+## V
+## W
+## X
+## Y
+## Z
