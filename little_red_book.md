@@ -51,9 +51,14 @@
   - e.g., *Relabeling methods use the trained model to incrementally detect possibly noisy labels and rectify them with model predictions.*
 
 ## S
+- scrutiny
+  - e.g., *Separately, Tesla's federal tax filings are also under scrutiny after the company reported huge losses, presenting an avenue for the company to pay $0 in federal taxes.*
 ## T
 - trait
   - e.g., *This captivating commonplace trait of human cognition*
+## U
+- underscore
+  - e.g., *Biden's comments come as new satellite images show Russian's continuing military buildup around Ukraine from three directions, underscoring fears that Moscow is preparing to invade.*
 ## U
 ## V
 ## W
