@@ -51,6 +51,8 @@
   - e.g., *Relabeling methods use the trained model to incrementally detect possibly noisy labels and rectify them with model predictions.*
 
 ## S
+- see
+  - e.g., *It is unclear if the drug test controversy will see the medal revoked.*  
 - scrutiny
   - e.g., *Separately, Tesla's federal tax filings are also under scrutiny after the company reported huge losses, presenting an avenue for the company to pay $0 in federal taxes.*
 ## T
