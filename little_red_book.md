@@ -15,7 +15,8 @@
   - *verb*, combine (two or more texts, ideas, etc.) into one.
   - e.g., *the urban crisis conflates a number of different economic and social issues*
 ## D
-
+- deference
+  - e.g., *President Biden likes to promise that he will follow the science, to signal his difference from Trump and deference to the C.D.C.*
 
 ## E
 - envisage
@@ -44,6 +45,10 @@
 - paucity
   - *noun*, the presence of something only in small or insufficient quantities or amounts; scarcity.
   - e.g., *a paucity of information*
+- pawn
+  - e.g., *The operation has been slammed as overtly political (政治性明显) by Democratic lawmakers and some National Guard members who say they're being used as political pawns in an election year.* 
+- perpetuate
+  - e.g., *From spreading propaganda in the U.S. before the 2016 presidential election to perpetuating falsehoods about COVID-19 vaccines, Russia in recent years has embarked on sophisticated social media disinformation campaigns, hoping to exacerbate political tensions around the world.*
 ## Q
 
 ## R
