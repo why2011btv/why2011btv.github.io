@@ -1,3 +1,7 @@
+## 02/17/2022
+- Tense detection
+  - https://tense-sense-identifier.herokuapp.com/#output
+  - https://u-aizu.ac.jp/~jblake/course_tense/tense_unit_07.html
 ## 12/14/2021
 - <img src="https://render.githubusercontent.com/render/math?math=x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}">
 - Now we have tools for estimating uncertainty in neural networks. How can we apply to unanswerable questions?
