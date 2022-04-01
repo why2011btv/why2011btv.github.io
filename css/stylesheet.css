@@ -493,7 +493,7 @@ body {
 }
 
 a {
-    color: #1e6bb8;
+    color: #965454;
     text-decoration: none
 }
 
@@ -554,9 +554,11 @@ a:hover {
 .page-header {
     color: #fff;
     text-align: center;
-    background-color: #159957;
-    background-image: linear-gradient(120deg, #155799, #159957)
+    
+    background-image: linear-gradient(120deg, #9ca8b8, #9ca8b8)
 }
+
+
 
 @media screen and (min-width: 64em) {
     .page-header {
@@ -659,12 +661,13 @@ a:hover {
     max-width: 100%
 }
 
+
 .main-content h1, .main-content h2, .main-content h3, .main-content h4,
 .main-content h5, .main-content h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: #159957
+    color: #7a7281
 }
 
 .main-content p {
