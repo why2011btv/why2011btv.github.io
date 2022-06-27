@@ -1,3 +1,6 @@
+## 06/26/2022
+- [Latex Symbols](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
+
 ## 02/17/2022
 - Tense detection
   - https://tense-sense-identifier.herokuapp.com
