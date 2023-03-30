@@ -18,7 +18,25 @@
     top: 18px;
     left: -120px;
   }
-  
+
+@media screen and (max-width: 767px) {
+    .header img {
+        position: static;
+        top: 0;
+        left: 0;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .header h1,
+    .header h2 {
+        position: static;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+}  
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 html {
