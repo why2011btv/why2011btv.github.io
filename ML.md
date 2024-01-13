@@ -35,7 +35,8 @@
 5. Spilt the dataset into 10-fold vs 2-fold, which one yields model with higher variance? And which one yields model with higher bias?
   - 10-fold has higher variance; 2-fold has higher bias.
 6. What is regularization?
-  -  This technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting. It significantly reduces the variance of the model, without substantial increase in its bias. Using L1 Norm (Lasso) or L2 Norm (Ridge) can achieve regularization.
+  - A process that changes the result answer to be "simpler": L1 & L2 regularization; dropout; cross-validation
+  - This technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting. It significantly reduces the variance of the model, without substantial increase in its bias. Using L1 Norm (Lasso) or L2 Norm (Ridge) can achieve regularization.
 7. What is the cost function of logistic regression?
   - ![1*CQpbokNStSnBDA9MdJWU_A](https://user-images.githubusercontent.com/32129905/145099928-3665389e-9b2d-44ce-96be-4e730fcb10d2.png)
 8. What is ROC? AUC?
@@ -130,3 +131,15 @@
   - Pros: Excellent Predictive Power; Interpretability; No normalization required; Fine with missing data
   - Cons: Parameter Complexity and Overfitting Risk; Limited with regression especially when data has linear nature; Biased towards variables with more levels
 30. Ensemble
+31. Hypothesis Set
+    - The hypothesis set 𝐻 is the set of all candidate formulas (or candidate models if you like) that could possibly explain the training examples we have.
+    - Our learning algorithm 𝐴 (that being a straightforward learning routine like linear regression or an elaborate learning routine like a gradient boosting machine) allows us to make the optimal choice of ℎ∈𝐻 that the algorithm 𝐴 produces. Notice that the hypothesis test 𝐻 is related the learning algorithm 𝐴. For example, a linear regression can only "learn" linear models (if we do not incorporate interactions) while a gradient boosting machine can learn non-linear relations more easily.
+32. Inductive Bias
+    - the set of assumptions that the learner uses to predict outputs of given **inputs that it has not encountered**
+    - The following is a list of common inductive biases in machine learning algorithms.
+        - Maximum conditional independence: if the hypothesis can be cast in a Bayesian framework, try to maximize conditional independence. This is the bias used in the Naive Bayes classifier.
+        - Minimum cross-validation error: when trying to choose among hypotheses, select the hypothesis with the lowest cross-validation error. Although cross-validation may seem to be free of bias, the "no free lunch" theorems show that cross-validation must be biased.
+        - Maximum margin: when drawing a boundary between two classes, attempt to maximize the width of the boundary. This is the bias used in support vector machines. The assumption is that distinct classes tend to be separated by wide boundaries.
+        - Minimum description length: when forming a hypothesis, attempt to minimize the length of the description of the hypothesis.
+        - Minimum features: unless there is good evidence that a feature is useful, it should be deleted. This is the assumption behind feature selection algorithms.
+        - Nearest neighbors: assume that most of the cases in a small neighborhood in feature space belong to the same class. Given a case for which the class is unknown, guess that it belongs to the same class as the majority in its immediate neighborhood. This is the bias used in the k-nearest neighbors algorithm. The assumption is that cases that are near each other tend to belong to the same class.
