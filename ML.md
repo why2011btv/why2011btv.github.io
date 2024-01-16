@@ -115,6 +115,8 @@
   - bootstrap: random sampling with replacement 
   - ![0*Wjdc5fBd53V108Qn](https://user-images.githubusercontent.com/32129905/145491070-95d2d97b-c10c-4514-b0fc-655c0621660b.png)
 28. Boosting vs Bagging
+Bagging 是 Bootstrap Aggregating 的简称，意思就是再取样 (Bootstrap) 然后在每个样本上训练出来的模型取平均，所以是降低模型的 variance. Bagging 比如 Random Forest 这种先天并行的算法都有这个效果。
+Boosting 则是迭代算法，每一次迭代都根据上一次迭代的预测结果对样本进行加权，所以随着迭代不断进行，误差会越来越小，所以模型的 bias 会不断降低。比如 Adaptive Boosting，XGBoost 就是 Boosting 算法。
   - sampling method
     - Bagging：训练集是在原始集中有放回选取的，从原始集中选出的各轮训练集之间是独立的。
     - Boosting：每一轮的训练集不变，只是训练集中每个样例在分类器中的权重发生变化。而权值是根据上一轮的分类结果进行调整。
@@ -143,3 +145,36 @@
         - Minimum description length: when forming a hypothesis, attempt to minimize the length of the description of the hypothesis.
         - Minimum features: unless there is good evidence that a feature is useful, it should be deleted. This is the assumption behind feature selection algorithms.
         - Nearest neighbors: assume that most of the cases in a small neighborhood in feature space belong to the same class. Given a case for which the class is unknown, guess that it belongs to the same class as the majority in its immediate neighborhood. This is the bias used in the k-nearest neighbors algorithm. The assumption is that cases that are near each other tend to belong to the same class.
+33. adam vs sgd
+    - 学习率调整：SGD使用固定的学习率来更新参数，而Adam算法通过自适应调整学习率来更新参数。Adam结合了每个参数的梯度的一阶矩和二阶矩信息，可以根据参数的梯度和历史梯度信息进行自适应学习率调整。
+    - 参数更新方式：SGD是基于每个样本或小批量数据的梯度进行参数更新，而Adam算法对梯度的一阶矩和二阶矩进行估计，通过引入动量项结合历史的梯度信息来更新参数。
+    - 收敛性能：Adam算法通常能更快地收敛到较好的局部或全局最优解，特别是在处理具有稀疏梯度或非平稳目标函数的问题时。SGD在一些情况下可能容易陷入局部最优点，尤其在训练复杂的深度神经网络时。
+    - 内存需求：Adam算法需要存储每个参数的一阶矩和二阶矩估计，因此会占用更多的内存。而SGD只需要存储当前更新的梯度，所以内存需求较小。
+34. adam vs adamw
+    - 学习率调整：Adam算法中的学习率调整是基于参数的一阶矩和二阶矩估计进行自适应的。而AdamW算法在Adam的基础上，引入了一种称为"weight decay"的权重衰减机制，用来控制参数的大小，防止过拟合。具体来说，AdamW在计算梯度更新时会将权重衰减的影响从梯度中剔除，然后再进行参数更新。
+    - 权重衰减：Adam算法中的权重衰减是在计算梯度时先对其进行乘法操作，即将参数的更新项中加入了正则化项。而AdamW算法对权重衰减进行了修正，将其应用到参数更新之后，以避免对参数的一阶矩估计产生不良影响。
+    - AdamW算法相对于Adam算法来说，更加稳定和鲁棒，特别是在处理大规模数据集和复杂模型时，能够提供更好的性能。这是因为AdamW算法对权重衰减的处理更加合理，能够更好地平衡模型的正则化和优化过程。
+35. 在机器学习中 batch size怎么调 对performance有什么影响？
+一般来说，较大的batch size会带来以下影响：训练速度加快：使用较大的batch size可以利用并行计算的能力，加快模型的训练速度。内存需求增加：较大的batch size会增加内存的需求，特别是对于大规模数据集或者模型较大的情况。如果内存有限，可能需要降低batch size或者修改模型的结构。梯度估计精度降低：较大的batch size会导致在一次迭代中只更新一次模型参数，这可能会导致梯度估计的精度下降，使得模型收敛速度变慢或者性能下降。模型性能变差：根据具体的数据集、模型和任务，较大的batch size可能对模型的性能产生负面影响。有时小批量的训练可以帮助模型更好地学习复杂的模式和细节。
+36. learning rate怎么调
+    - 手动调整：可以根据训练过程的表现手动调整学习率。通常，开始时使用较大的学习率可以加速收敛，然后逐渐减小学习率，使模型更加稳定。
+    - 学习率衰减：可以在训练的每个epoch或固定的步骤中进行学习率的衰减。常见的衰减策略包括按照固定比例衰减（如每个epoch乘以一个小于1的因子）、按照固定步骤衰减（如每隔固定步骤减小学习率）等。
+    - 自适应学习率：使用自适应的学习率优化算法，如AdaGrad、RMSprop、Adam等，这些算法会根据梯度的变化自动调整学习率。
+    - 学习率策略搜索：可以使用学习率策略搜索算法，如Grid Search、Random Search等，通过尝试不同的学习率设置来找到最佳的学习率。
+    - 提前停止（Early Stopping）：当模型在验证集上的性能停止提升时，可以停止训练，避免过拟合。这种方法可以避免在学习率过高的情况下继续训练，并且节省训练时间。
+
+37. 有哪些optimizer？https://github.com/lilipads/gradient_descent_viz
+    - 梯度下降法（Gradient Descent）：是最基本的优化算法之一。它通过计算模型参数对损失函数的梯度，并根据梯度方向调整参数，以最小化损失函数。
+    - 随机梯度下降法（Stochastic Gradient Descent，SGD）：与梯度下降法类似，但是每次更新参数时只使用一个样本或一小批样本的梯度信息。这样可以加快训练速度，但可能导致训练的不稳定性。
+    - 动量（Momentum）：通过引入动量项来加速收敛并减少震荡。动量优化器在更新参数时结合了当前梯度和之前的梯度信息，以便更好地更新参数方向。
+    - AdaGrad（Adaptive Gradient）：根据每个参数的历史梯度信息调整学习率。AdaGrad会根据参数的梯度大小自适应地对学习率进行缩放，使得参数较大的梯度得到较小的学习率，参数较小的梯度得到较大的学习率。
+    - RMSprop（Root Mean Square Propagation）：在AdaGrad的基础上改进，通过引入衰减系数来限制历史梯度对学习率的影响。RMSprop可以减缓学习率下降的速度，有助于防止训练过程中的震荡。
+    - Adam（Adaptive Moment Estimation）：**结合了动量和RMSprop的优点**，同时考虑了梯度的一阶矩和二阶矩信息。Adam可自适应调整学习率，并通过动量项和梯度方向来更新参数。
+   
+38. Imbalanced Data怎么处理 以及metrics
+    - label smoothing
+    - 重采样（Resampling）:上采样（Oversampling）: 对少数类别进行重复采样，以增加其样本数量，从而匹配多数类别的样本数量。例如，随机上采样和SMOTE（Synthetic Minority Over-sampling Technique）。下采样（Undersampling）: 减少多数类别的样本数量，使其与少数类别的样本数量接近。例如，随机下采样。组合方法：结合上采样少数类别和下采样多数类别的方法。
+    - 权重调整（Class Weights）:调整不同类别的权重，以便在损失函数中给予少数类别更高的影响力。这可以使模型在训练过程中更加关注少数类别的样本。
+    - 改进模型评估指标（Metrics）:使用更适合不平衡数据的模型评估指标。对于两类问题，如精确率（Precision）、召回率（Recall）、F1分数（F1 score）、AUC-ROC（Area Under the Receiver Operating Characteristic curve）等，可以提供更综合的性能度量。对于多类别问题，可以使用加权的指标或者宏平均/微平均的方法来计算指标，使得每个类别都得到合理的表示。
+    - 选择合适的模型:某些算法可能对不平衡数据更为鲁棒。比如，基于树的算法（如随机森林和梯度提升树）通常对不平衡数据不那么敏感。
+    - 使用集成学习方法:通过集成不同的模型来提高对少数类别的预测性能。例如，可以使用Bagging或Boosting技术。
