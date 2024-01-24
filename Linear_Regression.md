@@ -24,8 +24,21 @@ Overall, while duplicate data may distort some metrics, key parameters such as c
 
 The relationship: The square of the correlation coefficient (i.e., r²) is equal to R-squared. R-squared measures the proportion of the variance in the dependent variable that can be predicted from the independent variable(s), so it is essentially a measure of the explanatory power of the regression model. Thus, a high r² means a more reliable linear regression prediction. If r is the correlation between X and Y, then r² = R², indicating that R² measures the square of the correlation between the observed and predicted values of the dependent variable.
 # 如何detect collinearity
-  - Variance Inflation Factor (VIF)
-# collinearity如何影响linear regression的variance
+There are multiple methods for detecting collinearity (inter-correlations among predictor variables) in your dataset:
+
+1. Correlation matrix: This method involves creating a matrix of Pearson's correlations between all pairs of variables. High correlation coefficients between pairs of variables may indicate a collinearity problem.
+
+2. Variance Inflation Factors (VIF): A VIF quantifies how much the variance is inflated for each coefficient in the model. A VIF of 1 indicates no collinearity, while a VIF greater than 1 indicates some degree of collinearity. As a rule of thumb, a VIF larger than 5 (or sometimes 10) indicates a significant collinearity problem.
+
+3. Condition Index: In a multiple regression analysis, a condition index above 15 indicates a potential problem with collinearity and above 30, a serious problem.
+
+4. Eigenvalues: When conducting Principal Component Analysis, small or zero Eigenvalues are indicative of collinearity.
+
+5. Tolerance: It is the reciprocal of the VIF. If the value of tolerance is less than 0.2 or 0.1, it’s generally considered an indication of high collinearity.
+
+6. Scatter Plots and Correlation: Visualizing the data can sometimes help to check the pairwise relationships between variables. If two variables are found to have a linear relationship, then they might be collinear.
+
+Properly identifying and addressing collinearity is crucial since it can impact the stability and interpretability of your regression model.# collinearity如何影响linear regression的variance
   - 1. High Variance: In presence of high collinearity, the estimates of parameters can have a substantial amount of variance, making them very sensitive to slight changes in the model. This makes the model unstable and the estimates unreliable, leading to overfitting.
 # linear regression的assumptions
   - linearity
