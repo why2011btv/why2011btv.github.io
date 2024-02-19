@@ -2,6 +2,10 @@
 
 # 手搓transformer
 
+# complexity of transformer
+
+# long-context how?
+
 # Tokenizer: word-level, character-level, subword-level
 
 ## WordPiece: BERT, DistilBERT<img width="1662" alt="Screenshot 2024-01-13 at 5 24 35 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/aa48a4cf-67b0-428c-af4d-5edca60a44d7">
