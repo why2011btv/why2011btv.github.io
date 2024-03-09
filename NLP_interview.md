@@ -8,6 +8,7 @@
     - cosine learning rate schedule (the final learning rate is equal to 10% of the maximal learning rate)
     - weight decay (prevent the weights from becoming too large and potentially overfitting the model; works by adding a penalty to the loss function; Specifically with L2 regularization, the penalty is proportional to the square of the magnitude of the weights)
     - gradient clipping (Gradient clipping manages the exploding gradient problem by putting a maximum limit or threshold on the value of the gradient. If a gradient exceeds this threshold, it is set to the threshold. This limits the maximum size of the weight updates (i.e., the steps taken in the optimization algorithm such as stochastic gradient descent), and can lead to more stable and successful learning. It is commonly used when training recurrent neural networks (RNNs), where the exploding gradient problem can be particularly prevalent)
+    - 2,000 warm-up steps
 
 
 # 手搓beam search
