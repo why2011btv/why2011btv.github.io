@@ -1,6 +1,7 @@
 # Llama 2
+  - Tokenization: it employs a **bytepair encoding (BPE)** algorithm (Sennrich et al., 2016) using the implementation from **SentencePiece** (Kudo and Richardson, 2018). As with Llama 1, we split all numbers into individual digits and use bytes to decompose unknown UTF-8 characters. The total vocabulary size is **32k tokens**.
   - Context length: 4096 (doubled the context length of the model)
-  - grouped-query attention (GQA)
+  - grouped-query attention (GQA): Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability.
   - SFT 
     - For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of 2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens.
     - A special token is utilized to separate the prompt and answer segments.
