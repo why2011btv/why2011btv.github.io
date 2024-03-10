@@ -8,6 +8,13 @@
     - A special token is utilized to separate the prompt and answer segments.
     - We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens.
     - Finally, we fine-tune the model for 2 epochs.
+  - Reward Modeling 
+    - the two responses to a given prompt are sampled from two different model variants, and varying the temperature hyper-parameter
+    - We collected a large dataset of over 1 million binary comparisons based on humans applying our specified guidelines, which we refer to as Meta reward modeling data.
+    - To address this, we train two separate reward models, one optimized for helpfulness and another for safety
+  - RLHF (PPO + Rejection Sampling fine-tuning)
+    - We therefore trained successive versions for RLHF models, referred to
+here as RLHF-V1, . . . , RLHF-V5.
 # LLaMA
   - Context Length: 2048
   - Architecture (main difference with the original transformer architecture (Vaswani et al., 2017), and where we were found the inspiration for this change (in bracket))
