@@ -1,7 +1,9 @@
 # Llama 2
-  - For supervised fine-tuning, we use a cosine learning rate schedule with an initial
-learning rate of 2 × 10−5
-, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens.
+  - SFT 
+    - For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of 2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens.
+    - A special token is utilized to separate the prompt and answer segments.
+    - We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens.
+    - Finally, we fine-tune the model for 2 epochs.
 # LLaMA
   - Architecture (main difference with the original transformer architecture (Vaswani et al., 2017), and where we were found the inspiration for this change (in bracket))
     - Pre-normalization [GPT3]; benefit: improve training stability; RMSNorm
