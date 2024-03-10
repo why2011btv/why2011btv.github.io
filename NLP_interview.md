@@ -3,7 +3,7 @@
   - Context length: 4096 (doubled the context length of the model)
   - grouped-query attention (GQA): Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability.
   - SFT 
-    - We found that SFT annotations in the order of **tens of thousands** was enough to achieve a high-quality result
+    - We found that SFT annotations in the order of **tens of thousands** was enough to achieve a high-quality result. We stopped annotating SFT after collecting a total of 27,540 annotations. 
     - For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of 2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens.
     - A special token is utilized to separate the prompt and answer segments.
     - We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens.
