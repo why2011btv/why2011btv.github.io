@@ -49,45 +49,44 @@ here as RLHF-V1, . . . , RLHF-V5.
 
 
 # 手搓beam search
-```python
-import torch
+The goal of beam search is to improve the quality of the predictions by keeping the most promising candidates at each step. So, instead of keeping the most probable prediction at each step (like in greedy decoding), we keep a fixed number of `beam_size` most probable sequences at each step.
 
-def beam_search(LM, start_token_id, end_token_id, max_length, beam_size):
-    beams = [(torch.tensor([start_token_id]), 0)]
-    for _ in range(max_length):
+The function `beam_search` implements this process with a language model (`LM`). The input to this function is:
+
+- `LM`: a language model (a function) which takes as input a sequence of token ids (as torch tensor) and outputs a probability for each possible next token in the vocabulary.
+- `start_token_id`: the id of the start token in the vocabulary, which is used to start all sequences.
+- `end_token_id`: the id of the end token in the vocabulary, which is used to indicate the end of a sequence.
+- `max_length`: the maximum length of the sequences. If a sequence reaches this length, it's not extended further.
+- `beam_size`: the number of most probable sequences to keep at each step.
+
+Yes, the prompt should be a sequence of tokens. If the prompt is "Once upon a time", you'd have to convert it to token IDs as per your language model's vocabulary, append the start token at the beginning, and then pass it to this function.
+
+Here's an updated version of the function:
+
+```python
+def beam_search(LM, prompt_token_ids, end_token_id, max_length, beam_size):
+    initial_seq = torch.tensor(prompt_token_ids)
+    beams = [(initial_seq, 0)]
+
+    while True:
         new_beams = []
         for (seq, log_prob) in beams:
-            seq = seq.unsqueeze(0)  # Add batch dimension
-            probs = torch.log_softmax(LM(seq), dim=-1)  # Run through LM
-            top_probs, top_ids = probs[0, -1].topk(beam_size)  # Get top k probs & ids
-            
-            for i in range(beam_size):
-                next_seq = torch.cat((seq, top_ids[i:i+1].unsqueeze(0)), dim=-1)
-                next_prob = log_prob + top_probs[i].item()
-                
-                # Don't expand this path if next token is end_token
-                if top_ids[i] == end_token_id:
-                    return next_seq if len(new_beams) == 0 else new_beams[0][0]
-                
-                new_beams.append((next_seq, next_prob))
-        
+            if seq[-1] == end_token_id or len(seq) == max_length:  # Don't extend this sequence further
+                new_beams.append((seq, log_prob))
+            else:
+                seq = seq.unsqueeze(0)  # Add batch dimension
+                probs = torch.log_softmax(LM(seq), dim=-1)  # Run through LM
+                top_probs, top_ids = probs[0, -1].topk(beam_size)  # Get top k probs & ids
+                for i in range(beam_size):
+                    next_seq = torch.cat((seq, top_ids[i:i+1].unsqueeze(0)), dim=-1)
+                    next_prob = log_prob + top_probs[i].item()
+                    new_beams.append((next_seq, next_prob))
+
         # Sort all available beams by score and keep the best `beam_size` ones
-        new_beams.sort(key=lambda tup: -tup[1])
+        new_beams.sort(key=lambda tup: -tup[1], reverse=True)
         beams = new_beams[:beam_size]
-    
-    return beams[0][0]  # Return the best beam when max_length is reached
-
-# Simple testing:
-# Assume we are using a hypothetical pretrained model `model` as the language model (LM)
-# For beam search, we usually don't perform backpropagation, hence we use torch.no_grad()
-
-end_token_id = 2
-start_token_id = 1
-max_length = 10
-beam_size = 5
-
-with torch.no_grad():
-    seq = beam_search(model, start_token_id, end_token_id, max_length, beam_size)
+        if all(seq[-1] == end_token_id for seq, _ in beams):  # All sequences have ended
+            return beams
 ```
 # 手搓transformer
 ```python
