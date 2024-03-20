@@ -1,3 +1,9 @@
+# [On Determinism](https://community.openai.com/t/a-question-on-determinism/8185)
+  - temperature
+  - There’s inherent non determinism in GPU calculations around floating point operations - the differences in log probabilities are tiny, but when there’s a small difference between the top two likely tokens, then a different token might be chosen every now and then leading to different results
+  - There are speed tradeoffs, and in order to make the endpoints fast GPUs are used, which do parallel (non deterministic) calculations. Any modern gpu neural net calculations will be subject to these.
+  - Very simplified example to illustrate the point: a * b * c can be calculated either as (ab) c, or a(bc), but tiny differences can occur when performing floating point operations with the last few significant digits,leading to a very slightly different result. Sometimes these tiny differences can compound and be amplified within a network with argmax on the next token, if the logprobs are very close.
+
 # Llama 2
   - Tokenization: it employs a **bytepair encoding (BPE)** algorithm (Sennrich et al., 2016) using the implementation from **SentencePiece** (Kudo and Richardson, 2018). As with Llama 1, we split all numbers into individual digits and use bytes to decompose unknown UTF-8 characters. The total vocabulary size is **32k tokens**.
   - Context length: 4096 (doubled the context length of the model)
