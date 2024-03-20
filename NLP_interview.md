@@ -1,3 +1,6 @@
+# Sparse Upcycling: MoE
+![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2823bb08-8ec1-4b83-9f50-0ab0f83c662b)
+
 # Inverse Toxicity Filters
   - [Guide](https://arxiv.org/pdf/2305.13169.pdf#:~:text=Inverse%20toxicity%20filters%2C%20which%20remove,toxic%20content%2C%20demonstrate%20targeted%20benefits.)
   - Quality and Toxicity Filters (Section 5). Filtering for document quality and toxicity have significant but
