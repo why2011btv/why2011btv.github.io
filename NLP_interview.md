@@ -51,7 +51,7 @@ here as RLHF-V1, . . . , RLHF-V5.
 # 手搓beam search
 
 # 手搓transformer
-```
+```python
 import torch
 from torch import nn
 import torch.nn.functional as F
