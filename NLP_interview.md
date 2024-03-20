@@ -81,6 +81,7 @@ here as RLHF-V1, . . . , RLHF-V5.
   - Batch-norm vs Layer-norm<img width="1103" alt="Screenshot 2024-01-13 at 4 32 57 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/c908cc29-0793-4fcc-8881-b6de25d08a7d">
   - 序列任务中更常用Layer-norm：因为序列数据的长度不一样，batch-norm在针对不同样本的同一位置做归一化时无法得到真实分布的统计值；而layer-norm会对同一个样本的每一个位置的不同特征都做归一化
   - Order of Add & Norm: 保持主干网络的方差稳定，使模型泛化能力更强，但不容易收敛；如果先Norm后Residual（pre-normalization）：只是增加了网络宽度，深度没有太大增加，效果不如post-normalization好
+  - [Post-LN vs Pre-LN](https://arxiv.org/pdf/2002.04745.pdf)
 ## FFN Activation function:
   - ReLU (Attention is all you need)
   - GeLU (BERT): Introduce regularization; 越小的值越容易被丢弃；相当于ReLU和dropout的综合
