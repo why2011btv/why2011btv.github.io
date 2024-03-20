@@ -51,6 +51,50 @@ here as RLHF-V1, . . . , RLHF-V5.
 # 手搓beam search
 
 # 手搓transformer
+import torch
+from torch import nn
+import torch.nn.functional as F
+
+class MultiHeadAttention(nn.Module):
+    def __init__(self, d_model, num_heads):
+        super(MultiHeadAttention, self).__init__()
+        assert d_model % num_heads == 0
+
+        self.d_model = d_model
+        self.num_heads = num_heads
+        self.head_dim = d_model // num_heads
+
+        self.w_q = nn.Linear(d_model, d_model)
+        self.w_k = nn.Linear(d_model, d_model)
+        self.w_v = nn.Linear(d_model, d_model)
+
+        self.fc_out = nn.Linear(d_model, d_model)
+
+    def forward(self, query, key, value, mask):
+        N = query.shape[0]
+
+        Q = self.w_q(query)
+        K = self.w_k(key)
+        V = self.w_v(value)
+
+        Q = Q.view(N, -1, self.num_heads, self.head_dim).permute(0, 2, 1, 3)
+        K = K.view(N, -1, self.num_heads, self.head_dim).permute(0, 2, 1, 3)
+        V = V.view(N, -1, self.num_heads, self.head_dim).permute(0, 2, 1, 3)
+
+        energy = torch.matmul(Q, K.permute(0, 1, 3, 2)) / self.d_model**0.5
+        if mask is not None:
+            energy = energy.masked_fill(mask == 0, float("-1e20"))
+        
+        attention = torch.softmax(energy, dim=-1)
+        out = torch.matmul(self.dropout(attention), V)
+        
+        out = out.permute(0, 2, 1, 3).contiguous()
+        out = out.view(N, -1, self.d_model)
+
+        out = self.fc_out(out)
+
+        return out
+```
 The image you've shared shows two Transformer architecture variants: (a) Post-Layer Normalization (Post-LN) and (b) Pre-Layer Normalization (Pre-LN). The architectures are used for building deep learning models, especially for tasks like language understanding and translation. 
 
 Writing complete Python code for these architectures from scratch can be quite involved, but I can give you a high-level example using PyTorch, a popular deep learning framework.
