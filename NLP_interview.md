@@ -1,3 +1,12 @@
+# Inverse Toxicity Filters
+  - Quality and Toxicity Filters (Section 5). Filtering for document quality and toxicity have significant but
+opposite effects on model behaviour. Quality filtering, removing low-quality text, substantially increases both
+toxic generation and downstream performance across tasks we tested, despite reducing the amount of training
+data. On the other hand, removing toxic data trades-off fewer toxic generations for reduced generalization
+performance. Inverse toxicity filters, which remove the least toxic content, demonstrate targeted benefits.
+Lastly, evaluation on datasets with high quality text aren’t necessarily improved by removing low-quality
+text from the dataset
+
 # [On Determinism](https://community.openai.com/t/a-question-on-determinism/8185)
   - temperature
   - There’s inherent non determinism in GPU calculations around floating point operations - the differences in log probabilities are tiny, but when there’s a small difference between the top two likely tokens, then a different token might be chosen every now and then leading to different results
