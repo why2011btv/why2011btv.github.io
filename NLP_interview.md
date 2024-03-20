@@ -85,7 +85,8 @@ here as RLHF-V1, . . . , RLHF-V5.
   - <img width="1174" alt="Screenshot 2024-01-13 at 4 11 00 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/20bdfebe-72a5-489c-b8b0-6dacbbffebd7">
 ## attention_mask: [B, L, L]; usage: training (1, 1, ..., 1, 0, 0) and inference (upper right corner are all 0, since we cannot see the future)
   - adder = (1.0 - tf.cast(attention_mask, attention_scores.dtype)) * -10000.0
-## Add & Norm
+## Add & Norm![Screenshot 2024-03-20 at 12 15 20](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/8489c466-708d-4591-a319-a97b4fd97c78)
+
   - <img width="1162" alt="Screenshot 2024-01-13 at 4 27 14 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/ccab4f67-b074-466c-8133-926aa45d93c6">
   - Add (residual connection): 相当于在求导时加了一个恒等项，去减少梯度消失的问题
   - Batch-norm vs Layer-norm<img width="1103" alt="Screenshot 2024-01-13 at 4 32 57 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/c908cc29-0793-4fcc-8881-b6de25d08a7d">
