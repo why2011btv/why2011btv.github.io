@@ -51,6 +51,90 @@ here as RLHF-V1, . . . , RLHF-V5.
 # 手搓beam search
 
 # 手搓transformer
+The image you've shared shows two Transformer architecture variants: (a) Post-Layer Normalization (Post-LN) and (b) Pre-Layer Normalization (Pre-LN). The architectures are used for building deep learning models, especially for tasks like language understanding and translation. 
+
+Writing complete Python code for these architectures from scratch can be quite involved, but I can give you a high-level example using PyTorch, a popular deep learning framework.
+
+```python
+import torch
+import torch.nn as nn
+
+# Define the Multi-Head Attention block
+class MultiHeadAttention(nn.Module):
+    def __init__(self, d_model, num_heads):
+        super().__init__()
+        self.num_heads = num_heads
+        self.attention = nn.MultiheadAttention(d_model, num_heads)
+
+    def forward(self, query, key, value, mask):
+        # Forward pass of multi-head attention
+        attn_output, _ = self.attention(query, key, value, mask)
+        return attn_output
+
+# Define the Feedforward block
+class FeedForward(nn.Module):
+    def __init__(self, d_model, d_ff):
+        super().__init__()
+        self.linear1 = nn.Linear(d_model, d_ff)
+        self.relu = nn.ReLU()
+        self.linear2 = nn.Linear(d_ff, d_model)
+
+    def forward(self, x):
+        return self.linear2(self.relu(self.linear1(x)))
+
+# Define the Transformer Block for Post-Layer Normalization (Post-LN)
+class TransformerBlockPostLN(nn.Module):
+    def __init__(self, d_model, num_heads, d_ff):
+        super().__init__()
+        self.attention = MultiHeadAttention(d_model, num_heads)
+        self.norm1 = nn.LayerNorm(d_model)
+        self.ffn = FeedForward(d_model, d_ff)
+        self.norm2 = nn.LayerNorm(d_model)
+
+    def forward(self, x, mask):
+        attn_output = self.attention(x, x, x, mask)
+        x = x + attn_output
+        x = self.norm1(x)
+        ffn_output = self.ffn(x)
+        x = x + ffn_output
+        x = self.norm2(x)
+        return x
+
+# Define the Transformer Block for Pre-Layer Normalization (Pre-LN)
+class TransformerBlockPreLN(nn.Module):
+    def __init__(self, d_model, num_heads, d_ff):
+        super().__init__()
+        self.norm1 = nn.LayerNorm(d_model)
+        self.attention = MultiHeadAttention(d_model, num_heads)
+        self.norm2 = nn.LayerNorm(d_model)
+        self.ffn = FeedForward(d_model, d_ff)
+
+    def forward(self, x, mask):
+        x = self.norm1(x)
+        attn_output = self.attention(x, x, x, mask)
+        x = x + attn_output
+        x = self.norm2(x)
+        ffn_output = self.ffn(x)
+        x = x + ffn_output
+        return x
+```
+
+In the code above:
+- `d_model` is the dimensionality of the model (typically 512 or 768 in BERT).
+- `num_heads` is the number of attention heads (e.g., 8 or 12).
+- `d_ff` is the dimensionality of the feed-forward network's inner layer (typically 2048).
+- `mask` is used to ignore padding tokens in the input during the attention operation.
+
+You can instantiate a transformer block using:
+
+```python
+post_ln_transformer_block = TransformerBlockPostLN(d_model=512, num_heads=8, d_ff=2048)
+pre_ln_transformer_block = TransformerBlockPreLN(d_model=512, num_heads=8, d_ff=2048)
+```
+
+Remember, this is a very high-level example and lacks many details such as proper mask handling, dropout, and other nuances. For a full implementation, you would typically use an existing library like `transformers` from Hugging Face.
+
+
 
 # complexity of transformer
 
