@@ -1,4 +1,5 @@
 # Inverse Toxicity Filters
+  - [Guide](https://arxiv.org/pdf/2305.13169.pdf#:~:text=Inverse%20toxicity%20filters%2C%20which%20remove,toxic%20content%2C%20demonstrate%20targeted%20benefits.)
   - Quality and Toxicity Filters (Section 5). Filtering for document quality and toxicity have significant but
 opposite effects on model behaviour. Quality filtering, removing low-quality text, substantially increases both
 toxic generation and downstream performance across tasks we tested, despite reducing the amount of training
