@@ -13,7 +13,7 @@
     - Recomputation: Don't store attention matrix from forward, recompute it in the backward.
   - Implementation: fused CUDA kernel for fine-grained control of memory accesses  
 
-# Sparse Upcycling: MoE
+# [Sparse Upcycling: MoE](https://arxiv.org/pdf/2212.05055.pdf)
 ![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2823bb08-8ec1-4b83-9f50-0ab0f83c662b)
 
 # Inverse Toxicity Filters
