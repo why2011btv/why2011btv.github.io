@@ -19,7 +19,7 @@ While I was doing my last internship, my advisor also asked me to do the evaluat
 
 ## Tell me about a time when you gave a simple solution to a complex problem.
 SITUATION: When I was preparing for the ECCV submission last month, we had an ongoing problem with communication.
-So I was leading the project on creating an evaluation dataset that comprises of approximately 20 multimodal tasks. And I was collaborating with PhD students across multiple institutes.
+So I was leading the project on creating an evaluation dataset that comprises of 18 multimodal tasks. And I was collaborating with PhD students across multiple institutes.
 Updates on projects and task delegation was becoming increasingly difficult as we involve more helpers.
 TASK: So I decided to find a simple solution to this issue.
 ACTION: After researching online for the best workplace communication and productivity tools, I put together a short presentation on a tool called evernote 
@@ -41,3 +41,15 @@ I automatically say "YES" when people ask me to get involved in additional tasks
 
 ## Tell me about a time when you influenced a change by only asking questions.
 
+## 有没有在time limit的情况下，完成任务，trade off是什么
+I have started working as an intern at google but I also wanted to wrap up one of my previous projects and submit it to ECCV.  
+One of my collaborators felt that we should add more tasks into the evaluation benchmark.
+However, I believe that Speed matters in both Business and Academia. 
+It is not worth it to wait for the next conference since we have included the most significant tasks. 
+And I strongly agree with the bias for action in Amazon's leadership principles.
+Due to the time limit of paper submission, I sacrificed my time offwork to conduct experiments and write paper, and caught the paper submission deadline eventually. 
+It is very important for me to deliver results with the right quality and in a timely fashion.
+
+## Tough Feedback / Disagreement
+
+## 
