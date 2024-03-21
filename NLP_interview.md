@@ -89,6 +89,26 @@ def beam_search(LM, prompt_token_ids, end_token_id, max_length, beam_size):
             return beams
 ```
 # 手搓transformer
+Let's assume the following scenario for our multi-head attention implementation:
+
+- `d_model` (Input Dimension): 512
+- Number of heads `h`: 8
+- `d_k` (`d_model` / `h`): 64
+- Batch size: 64
+- Sequence Length: 200
+
+So, we have:
+
+- Input vectors (Query, Key, Value): [64 (Batch Size), 200 (Seq Length), 512 (`d_model`)]
+- After passing through the Linear Layers (`self.w_q`, `self.w_k`, `self.w_v`), the dimensions remain the same: [64, 200, 512]
+- These are then reshaped and transposed for multi-head attention, leading to: [64 (Batch Size), 8 (Number of Heads), 200 (Seq Length), 64 (`d_k`)]
+- The attention scores (the result of Q and K dot product) will be: [64, 8, 200, 200]
+- The output after the attention score applied to V is: [64, 8, 200, 64]
+- Finally, after combining the heads and passing through the output linear layer (`self.fc_out`), we get: [64, 200, 512]
+
+If a mask is applied, it should be of shape [64, 1, 1, 200] to correspond to the attention scores' shape. It is applied broadcasted along the third dimension when calculating the attention scores.
+
+This flow lets each head learn different types of attention (e.g., one head might pay attention to the previous word, another to the subsequent word), and allows for more complex interactions between words.
 ```python
 import torch
 from torch import nn
