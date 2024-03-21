@@ -1,3 +1,7 @@
+# Flash Attention
+  - [Tutorial](https://youtu.be/FThvfkXWqtE?t=793)
+  - [Paper](https://arxiv.org/pdf/2205.14135.pdf)
+
 # Sparse Upcycling: MoE
 ![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2823bb08-8ec1-4b83-9f50-0ab0f83c662b)
 
