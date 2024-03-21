@@ -4,7 +4,7 @@
 I'm Haoyu, a PhD student at the University of Pennsylvania, following Prof. Dan Roth. 
 My research focus is primarily on Natural Language Understanding.
 Since I joined Dan's group in 2019, I have published more than 10 papers in top conferences.
-I believe that is due to my passion about innovation and insisting on the highest standards in my research. 
+I believe they are due to my passion about innovation and insisting on the highest standards in my research. 
 And that's why I'm very excited about the opportunity to join Amazon as an intern in the coming summer.
 
 ## Why Amazon?
