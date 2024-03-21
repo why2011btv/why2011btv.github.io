@@ -256,7 +256,7 @@ Remember, this is a very high-level example and lacks many details such as prope
 
 # complexity of transformer
 
-# long-context how?
+
 
 # Tokenizer: word-level, character-level, subword-level
 
@@ -271,7 +271,12 @@ Remember, this is a very high-level example and lacks many details such as prope
 
 # Positional Embedding
 ## sinusoidal embeddings
+Problem: vectors move around chaotically when the position changes -> can lead to overfitting or memorizing
+<img width="1488" alt="Screenshot 2024-03-21 at 12 52 40 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/451ffca3-234d-4143-8ac6-00254cd6e2a8">
+[Source](https://youtu.be/GQPOtyITy54?t=463)
 ## learned embeddings
+
+## RoPE
 
 # Attention mechanism
 ## <img width="360" alt="Screenshot 2024-01-13 at 3 36 27 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/446b3e8c-9e03-48b6-bac0-b77d0cf7da76">
