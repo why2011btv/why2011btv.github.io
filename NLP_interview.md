@@ -1,6 +1,9 @@
 # Flash Attention
   - [Tutorial](https://youtu.be/FThvfkXWqtE?t=793)
   - [Paper](https://arxiv.org/pdf/2205.14135.pdf)
+    - Tiling: Restructure algorithm to load block by block from HBM to SRAM to compute attention
+    - Recomputation: Don't store attention matrix from forward, recompute it in the backward.
+  - Implementation: fused CUDA kernel for fine-grained control of memory accesses  
 
 # Sparse Upcycling: MoE
 ![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2823bb08-8ec1-4b83-9f50-0ab0f83c662b)
