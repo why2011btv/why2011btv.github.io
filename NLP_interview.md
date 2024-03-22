@@ -5,7 +5,7 @@
   - [Extending Context Window of Large Language Models via Positional Interpolation](https://arxiv.org/pdf/2306.15595.pdf)<img width="1176" alt="Screenshot 2024-03-21 at 11 48 03 AM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2334e9b0-266b-4a74-a75d-4d324e08fc58">
   - [Data Engineering for Scaling Language Models to 128K Context](https://arxiv.org/pdf/2402.10171.pdf)
 
-
+![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/f2d50b0e-fddd-473b-a653-4b7cc77ae629)
 
 # Flash Attention
   - [Tutorial](https://youtu.be/FThvfkXWqtE?t=793)
