@@ -59,6 +59,9 @@ text from the dataset
   - RLHF (PPO + Rejection Sampling fine-tuning)
     - We therefore trained successive versions for RLHF models, referred to
 here as RLHF-V1, . . . , RLHF-V5.
+<img width="1371" alt="Screenshot 2024-03-21 at 10 04 33 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/5d9543f2-01c1-4fe7-9e9f-5ac0438bb5d0">
+
+
 ```python
 def update_weights_with_weight_decay(weights, gradient, learning_rate, weight_decay):
     """
