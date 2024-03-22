@@ -5,7 +5,6 @@
   - [Extending Context Window of Large Language Models via Positional Interpolation](https://arxiv.org/pdf/2306.15595.pdf)<img width="1176" alt="Screenshot 2024-03-21 at 11 48 03 AM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2334e9b0-266b-4a74-a75d-4d324e08fc58">
   - [Data Engineering for Scaling Language Models to 128K Context](https://arxiv.org/pdf/2402.10171.pdf)
 
-![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/f2d50b0e-fddd-473b-a653-4b7cc77ae629)
 
 # Flash Attention
   - [Tutorial](https://youtu.be/FThvfkXWqtE?t=793)
@@ -34,6 +33,8 @@ text from the dataset
   - Very simplified example to illustrate the point: a * b * c can be calculated either as (ab) c, or a(bc), but tiny differences can occur when performing floating point operations with the last few significant digits,leading to a very slightly different result. Sometimes these tiny differences can compound and be amplified within a network with argmax on the next token, if the logprobs are very close.
 
 # Llama 2
+![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/f2d50b0e-fddd-473b-a653-4b7cc77ae629)
+
   - Tokenization: it employs a **bytepair encoding (BPE)** algorithm (Sennrich et al., 2016) using the implementation from **SentencePiece** (Kudo and Richardson, 2018). As with Llama 1, we split all numbers into individual digits and use bytes to decompose unknown UTF-8 characters. The total vocabulary size is **32k tokens**.
   - Context length: 4096 (doubled the context length of the model)
   - grouped-query attention (GQA): Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability.
