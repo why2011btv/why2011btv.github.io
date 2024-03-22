@@ -2,6 +2,7 @@
   - MHA vs MQA vs GQA
   - <img width="1660" alt="Screenshot 2024-03-21 at 10 01 32 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/8ac7a9c0-3c32-4211-8328-068f0de8fabb">
   - PaLM uses multi-query attention
+  - LLaMA 2 uses GQA
   - [Tutorial](https://youtu.be/pVP0bu8QA2w?t=2)
 
 # Long Context
