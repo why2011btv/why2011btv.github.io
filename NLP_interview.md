@@ -1,3 +1,6 @@
+# Speed Up Inference Time
+  - PaLM uses multi-query attention
+
 # Long Context
   - [RoPE](https://arxiv.org/pdf/2104.09864.pdf)
     - [Tutorial](https://youtu.be/GQPOtyITy54?t=86) 
