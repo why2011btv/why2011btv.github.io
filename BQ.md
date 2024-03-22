@@ -53,3 +53,54 @@ It is very important for me to deliver results with the right quality and in a t
 ## Tough Feedback / Disagreement
 
 ## 
+Why Amazon?
+Amazon is a big and successful company
+If I can join Amazon, I can meet the researchers who lead our field to move forward and learn a lot from them and improve myself. I also want to contribute my effort to the thriving of the company
+innovation
+hear a lot of good things happening at Amazon from my PhD advisor Dan Roth 
+Biggest challenge
+managing multiple things at the same: conduct research, write papers, present previous paper at conferences, several courses to take, applying for PhD programs, taking care of my best friend’s cat
+Other people blocking work
+1. Assess the situation: First, I would try to understand the cause of the blockage. Is it due to a lack of collaboration, difference in priorities, or a misunderstanding?
+
+2. Communicate with the colleague: I would approach the colleague in a professional and respectful manner to discuss the issue. I would explain how their actions are affecting my work and try to understand their perspective. Open communication can often resolve misunderstandings and lead to a solution.
+
+3. Propose a solution: After understanding the colleague's perspective, I would propose a solution that addresses both of our concerns and allows us to move forward with our work. This may involve compromising or finding a way to align our priorities.
+
+4. Seek guidance from a supervisor or manager: If the issue persists despite attempting to resolve it with the colleague, I would seek guidance from a supervisor or manager. I would explain the situation and the steps I've taken to resolve it, and ask for their support in finding a solution.
+GPU usage 
+矛盾
+keep calm and composed and be professional
+listen and get to know their viewpoint
+analyze and find the root cause
+Negative feedback from colleague
+listen actively
+ask for clarification
+think thoroughly and create an action plan 
+seek additional feedback from others
+implement the change
+follow up to discuss the change
+Improvement
+Task cannot finish
+Report to supervisor and 
+
+
+Multi-tasker: priority list 
+Good teamplayer: coordinate; assign tasks; chasing others to complete the tasks; send out in the morning; 
+Work under tight deadlines: KAIROS system integration + paper deadline 
+Fast learner: IARPA project; Adapting to a new role or responsibilities: For example, "When our team leader left our group, I was asked to step in and take over his responsibilities. I quickly familiarized myself with all the tasks in the project and was able to maintain the team's momentum during the transition." Our team ended up the second place in the final evaluation
+
+
+
+
+
+Make a decision for moving forward vs changing direction
+
+How to classify customer reviews:
+How to do data cleaning
+
+
+BERT architecture why subword pieces
+Transformers architecture
+BERT Training process: NSP + MLM how do they combine in a batch 
+
