@@ -1,5 +1,6 @@
 # Speed Up Inference Time
   - MHA vs MQA vs GQA
+  - <img width="1660" alt="Screenshot 2024-03-21 at 10 01 32 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/8ac7a9c0-3c32-4211-8328-068f0de8fabb">
   - PaLM uses multi-query attention
   - [Tutorial](https://youtu.be/pVP0bu8QA2w?t=2)
 
@@ -30,6 +31,7 @@ data. On the other hand, removing toxic data trades-off fewer toxic generations 
 performance. Inverse toxicity filters, which remove the least toxic content, demonstrate targeted benefits.
 Lastly, evaluation on datasets with high quality text aren’t necessarily improved by removing low-quality
 text from the dataset
+
 
 # [On Determinism](https://community.openai.com/t/a-question-on-determinism/8185)
   - temperature
