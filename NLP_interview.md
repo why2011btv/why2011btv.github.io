@@ -56,6 +56,31 @@ text from the dataset
   - RLHF (PPO + Rejection Sampling fine-tuning)
     - We therefore trained successive versions for RLHF models, referred to
 here as RLHF-V1, . . . , RLHF-V5.
+```python
+def update_weights_with_weight_decay(weights, gradient, learning_rate, weight_decay):
+    """
+    Update weights with weight decay applied during gradient descent.
+
+    Parameters:
+    - weights: array of model weights
+    - gradient: gradient of the loss function with respect to each weight
+    - learning_rate: step size for each iteration of weight updates
+    - weight_decay: factor used to penalize large weights (typically a small value like 0.1)
+
+    Returns:
+    - Updated weights after applying gradient descent step and weight decay
+    """
+    # Apply weight decay
+    weight_decay_term = weight_decay * weights
+    
+    # Update weights: gradient descent step and subtract weight decay term
+    updated_weights = weights - learning_rate * gradient - weight_decay_term
+    
+    return updated_weights
+
+# This function represents a basic form of weight update in neural networks,
+# incorporating the weight decay principle to encourage smaller weights for regularization.
+```
 # LLaMA
   - Context Length: 2048
   - Architecture (main difference with the original transformer architecture (Vaswani et al., 2017), and where we were found the inspiration for this change (in bracket))
