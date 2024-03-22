@@ -1,5 +1,7 @@
 # Speed Up Inference Time
+  - MHA vs MQA vs GQA
   - PaLM uses multi-query attention
+  - [Tutorial](https://youtu.be/pVP0bu8QA2w?t=2)
 
 # Long Context
   - [RoPE](https://arxiv.org/pdf/2104.09864.pdf)
