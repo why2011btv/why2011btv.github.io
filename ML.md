@@ -115,7 +115,7 @@
   - bootstrap: random sampling with replacement 
   - ![0*Wjdc5fBd53V108Qn](https://user-images.githubusercontent.com/32129905/145491070-95d2d97b-c10c-4514-b0fc-655c0621660b.png)
 28. Boosting vs Bagging
-Bagging 是 Bootstrap Aggregating 的简称，意思就是再取样 (Bootstrap) 然后在每个样本上训练出来的模型取平均，所以是降低模型的 variance. Bagging 比如 Random Forest 这种先天并行的算法都有这个效果。
+    - Bagging 是 Bootstrap Aggregating 的简称，意思就是再取样 (Bootstrap) 然后在每个样本上训练出来的模型取平均，所以是降低模型的 variance. Bagging 比如 Random Forest 这种先天并行的算法都有这个效果。
 Boosting 则是迭代算法，每一次迭代都根据上一次迭代的预测结果对样本进行加权，所以随着迭代不断进行，误差会越来越小，所以模型的 bias 会不断降低。比如 Adaptive Boosting，XGBoost 就是 Boosting 算法。
   - sampling method
     - Bagging：训练集是在原始集中有放回选取的，从原始集中选出的各轮训练集之间是独立的。
