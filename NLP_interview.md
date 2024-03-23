@@ -1,4 +1,49 @@
+# Speed Up Inference Time
+  - MHA vs MQA vs GQA
+  - <img width="1660" alt="Screenshot 2024-03-21 at 10 01 32 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/8ac7a9c0-3c32-4211-8328-068f0de8fabb">
+  - PaLM uses multi-query attention
+  - LLaMA 2 uses GQA
+  - [Tutorial](https://youtu.be/pVP0bu8QA2w?t=2)
+
+# Long Context
+  - [RoPE](https://arxiv.org/pdf/2104.09864.pdf)
+    - [Tutorial](https://youtu.be/GQPOtyITy54?t=86) 
+  - [Effective Long-Context Scaling of Foundation Models](https://arxiv.org/pdf/2309.16039.pdf)
+  - [Extending Context Window of Large Language Models via Positional Interpolation](https://arxiv.org/pdf/2306.15595.pdf)<img width="1176" alt="Screenshot 2024-03-21 at 11 48 03 AM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2334e9b0-266b-4a74-a75d-4d324e08fc58">
+  - [Data Engineering for Scaling Language Models to 128K Context](https://arxiv.org/pdf/2402.10171.pdf)
+
+
+# Flash Attention
+  - [Tutorial](https://youtu.be/FThvfkXWqtE?t=793)
+  - [Paper](https://arxiv.org/pdf/2205.14135.pdf)
+    - Tiling: Restructure algorithm to load block by block from HBM to SRAM to compute attention
+    - Recomputation: Don't store attention matrix from forward, recompute it in the backward.
+  - Implementation: fused CUDA kernel for fine-grained control of memory accesses  
+
+# [Sparse Upcycling: MoE](https://arxiv.org/pdf/2212.05055.pdf)
+![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/2823bb08-8ec1-4b83-9f50-0ab0f83c662b)
+
+
+# Inverse Toxicity Filters
+  - [Guide](https://arxiv.org/pdf/2305.13169.pdf#:~:text=Inverse%20toxicity%20filters%2C%20which%20remove,toxic%20content%2C%20demonstrate%20targeted%20benefits.)
+  - Quality and Toxicity Filters (Section 5). Filtering for document quality and toxicity have significant but
+opposite effects on model behaviour. Quality filtering, removing low-quality text, substantially increases both
+toxic generation and downstream performance across tasks we tested, despite reducing the amount of training
+data. On the other hand, removing toxic data trades-off fewer toxic generations for reduced generalization
+performance. Inverse toxicity filters, which remove the least toxic content, demonstrate targeted benefits.
+Lastly, evaluation on datasets with high quality text aren’t necessarily improved by removing low-quality
+text from the dataset
+
+
+# [On Determinism](https://community.openai.com/t/a-question-on-determinism/8185)
+  - temperature
+  - There’s inherent non determinism in GPU calculations around floating point operations - the differences in log probabilities are tiny, but when there’s a small difference between the top two likely tokens, then a different token might be chosen every now and then leading to different results
+  - There are speed tradeoffs, and in order to make the endpoints fast GPUs are used, which do parallel (non deterministic) calculations. Any modern gpu neural net calculations will be subject to these.
+  - Very simplified example to illustrate the point: a * b * c can be calculated either as (ab) c, or a(bc), but tiny differences can occur when performing floating point operations with the last few significant digits,leading to a very slightly different result. Sometimes these tiny differences can compound and be amplified within a network with argmax on the next token, if the logprobs are very close.
+
 # Llama 2
+![image](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/f2d50b0e-fddd-473b-a653-4b7cc77ae629)
+
   - Tokenization: it employs a **bytepair encoding (BPE)** algorithm (Sennrich et al., 2016) using the implementation from **SentencePiece** (Kudo and Richardson, 2018). As with Llama 1, we split all numbers into individual digits and use bytes to decompose unknown UTF-8 characters. The total vocabulary size is **32k tokens**.
   - Context length: 4096 (doubled the context length of the model)
   - grouped-query attention (GQA): Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability.
@@ -15,6 +60,34 @@
   - RLHF (PPO + Rejection Sampling fine-tuning)
     - We therefore trained successive versions for RLHF models, referred to
 here as RLHF-V1, . . . , RLHF-V5.
+<img width="1371" alt="Screenshot 2024-03-21 at 10 04 33 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/5d9543f2-01c1-4fe7-9e9f-5ac0438bb5d0">
+
+
+```python
+def update_weights_with_weight_decay(weights, gradient, learning_rate, weight_decay):
+    """
+    Update weights with weight decay applied during gradient descent.
+
+    Parameters:
+    - weights: array of model weights
+    - gradient: gradient of the loss function with respect to each weight
+    - learning_rate: step size for each iteration of weight updates
+    - weight_decay: factor used to penalize large weights (typically a small value like 0.1)
+
+    Returns:
+    - Updated weights after applying gradient descent step and weight decay
+    """
+    # Apply weight decay
+    weight_decay_term = weight_decay * weights
+    
+    # Update weights: gradient descent step and subtract weight decay term
+    updated_weights = weights - learning_rate * gradient - weight_decay_term
+    
+    return updated_weights
+
+# This function represents a basic form of weight update in neural networks,
+# incorporating the weight decay principle to encourage smaller weights for regularization.
+```
 # LLaMA
   - Context Length: 2048
   - Architecture (main difference with the original transformer architecture (Vaswani et al., 2017), and where we were found the inspiration for this change (in bracket))
@@ -30,12 +103,199 @@ here as RLHF-V1, . . . , RLHF-V5.
 
 
 # 手搓beam search
+The goal of beam search is to improve the quality of the predictions by keeping the most promising candidates at each step. So, instead of keeping the most probable prediction at each step (like in greedy decoding), we keep a fixed number of `beam_size` most probable sequences at each step.
 
+The function `beam_search` implements this process with a language model (`LM`). The input to this function is:
+
+- `LM`: a language model (a function) which takes as input a sequence of token ids (as torch tensor) and outputs a probability for each possible next token in the vocabulary.
+- `start_token_id`: the id of the start token in the vocabulary, which is used to start all sequences.
+- `end_token_id`: the id of the end token in the vocabulary, which is used to indicate the end of a sequence.
+- `max_length`: the maximum length of the sequences. If a sequence reaches this length, it's not extended further.
+- `beam_size`: the number of most probable sequences to keep at each step.
+
+Yes, the prompt should be a sequence of tokens. If the prompt is "Once upon a time", you'd have to convert it to token IDs as per your language model's vocabulary, append the start token at the beginning, and then pass it to this function.
+
+Here's an updated version of the function:
+
+```python
+def beam_search(LM, prompt_token_ids, end_token_id, max_length, beam_size):
+    initial_seq = torch.tensor(prompt_token_ids)
+    beams = [(initial_seq, 0)]
+
+    while True:
+        new_beams = []
+        for (seq, log_prob) in beams:
+            if seq[-1] == end_token_id or len(seq) == max_length:  # Don't extend this sequence further
+                new_beams.append((seq, log_prob))
+            else:
+                seq = seq.unsqueeze(0)  # Add batch dimension
+                probs = torch.log_softmax(LM(seq), dim=-1)  # Run through LM
+                top_probs, top_ids = probs[0, -1].topk(beam_size)  # Get top k probs & ids
+                for i in range(beam_size):
+                    next_seq = torch.cat((seq, top_ids[i:i+1].unsqueeze(0)), dim=-1)
+                    next_prob = log_prob + top_probs[i].item()
+                    new_beams.append((next_seq, next_prob))
+
+        # Sort all available beams by score and keep the best `beam_size` ones
+        new_beams.sort(key=lambda tup: -tup[1], reverse=True)
+        beams = new_beams[:beam_size]
+        if all(seq[-1] == end_token_id for seq, _ in beams):  # All sequences have ended
+            return beams
+```
 # 手搓transformer
+Let's assume the following scenario for our multi-head attention implementation:
+
+- `d_model` (Input Dimension): 512
+- Number of heads `h`: 8
+- `d_k` (`d_model` / `h`): 64
+- Batch size: 64
+- Sequence Length: 200
+
+So, we have:
+
+- Input vectors (Query, Key, Value): [64 (Batch Size), 200 (Seq Length), 512 (`d_model`)]
+- After passing through the Linear Layers (`self.w_q`, `self.w_k`, `self.w_v`), the dimensions remain the same: [64, 200, 512]
+- These are then reshaped and transposed for multi-head attention, leading to: [64 (Batch Size), 8 (Number of Heads), 200 (Seq Length), 64 (`d_k`)]
+- The attention scores (the result of Q and K dot product) will be: [64, 8, 200, 200]
+- The output after the attention score applied to V is: [64, 8, 200, 64]
+- Finally, after combining the heads and passing through the output linear layer (`self.fc_out`), we get: [64, 200, 512]
+
+If a mask is applied, it should be of shape [64, 1, 1, 200] to correspond to the attention scores' shape. It is applied broadcasted along the third dimension when calculating the attention scores.
+
+This flow lets each head learn different types of attention (e.g., one head might pay attention to the previous word, another to the subsequent word), and allows for more complex interactions between words.
+```python
+import torch
+from torch import nn
+import torch.nn.functional as F
+
+class MultiHeadAttention(nn.Module):
+    def __init__(self, d_model, num_heads):
+        super(MultiHeadAttention, self).__init__()
+        assert d_model % num_heads == 0
+
+        self.d_model = d_model
+        self.num_heads = num_heads
+        self.head_dim = d_model // num_heads
+
+        self.w_q = nn.Linear(d_model, d_model)
+        self.w_k = nn.Linear(d_model, d_model)
+        self.w_v = nn.Linear(d_model, d_model)
+
+        self.fc_out = nn.Linear(d_model, d_model)
+
+    def forward(self, query, key, value, mask):
+        N = query.shape[0]
+
+        Q = self.w_q(query)
+        K = self.w_k(key)
+        V = self.w_v(value)
+
+        Q = Q.view(N, -1, self.num_heads, self.head_dim).permute(0, 2, 1, 3)
+        K = K.view(N, -1, self.num_heads, self.head_dim).permute(0, 2, 1, 3)
+        V = V.view(N, -1, self.num_heads, self.head_dim).permute(0, 2, 1, 3)
+
+        energy = torch.matmul(Q, K.permute(0, 1, 3, 2)) / self.d_model**0.5
+        if mask is not None:
+            energy = energy.masked_fill(mask == 0, float("-1e20"))
+        
+        attention = torch.softmax(energy, dim=-1)
+        out = torch.matmul(self.dropout(attention), V)
+        
+        out = out.permute(0, 2, 1, 3).contiguous()
+        out = out.view(N, -1, self.d_model)
+
+        out = self.fc_out(out)
+
+        return out
+```
+The image you've shared shows two Transformer architecture variants: (a) Post-Layer Normalization (Post-LN) and (b) Pre-Layer Normalization (Pre-LN). The architectures are used for building deep learning models, especially for tasks like language understanding and translation. 
+
+Writing complete Python code for these architectures from scratch can be quite involved, but I can give you a high-level example using PyTorch, a popular deep learning framework.
+
+```python
+import torch
+import torch.nn as nn
+
+# Define the Multi-Head Attention block
+class MultiHeadAttention(nn.Module):
+    def __init__(self, d_model, num_heads):
+        super().__init__()
+        self.num_heads = num_heads
+        self.attention = nn.MultiheadAttention(d_model, num_heads)
+
+    def forward(self, query, key, value, mask):
+        # Forward pass of multi-head attention
+        attn_output, _ = self.attention(query, key, value, mask)
+        return attn_output
+
+# Define the Feedforward block
+class FeedForward(nn.Module):
+    def __init__(self, d_model, d_ff):
+        super().__init__()
+        self.linear1 = nn.Linear(d_model, d_ff)
+        self.relu = nn.ReLU()
+        self.linear2 = nn.Linear(d_ff, d_model)
+
+    def forward(self, x):
+        return self.linear2(self.relu(self.linear1(x)))
+
+# Define the Transformer Block for Post-Layer Normalization (Post-LN)
+class TransformerBlockPostLN(nn.Module):
+    def __init__(self, d_model, num_heads, d_ff):
+        super().__init__()
+        self.attention = MultiHeadAttention(d_model, num_heads)
+        self.norm1 = nn.LayerNorm(d_model)
+        self.ffn = FeedForward(d_model, d_ff)
+        self.norm2 = nn.LayerNorm(d_model)
+
+    def forward(self, x, mask):
+        attn_output = self.attention(x, x, x, mask)
+        x = x + attn_output
+        x = self.norm1(x)
+        ffn_output = self.ffn(x)
+        x = x + ffn_output
+        x = self.norm2(x)
+        return x
+
+# Define the Transformer Block for Pre-Layer Normalization (Pre-LN)
+class TransformerBlockPreLN(nn.Module):
+    def __init__(self, d_model, num_heads, d_ff):
+        super().__init__()
+        self.norm1 = nn.LayerNorm(d_model)
+        self.attention = MultiHeadAttention(d_model, num_heads)
+        self.norm2 = nn.LayerNorm(d_model)
+        self.ffn = FeedForward(d_model, d_ff)
+
+    def forward(self, x, mask):
+        x = self.norm1(x)
+        attn_output = self.attention(x, x, x, mask)
+        x = x + attn_output
+        x = self.norm2(x)
+        ffn_output = self.ffn(x)
+        x = x + ffn_output
+        return x
+```
+
+In the code above:
+- `d_model` is the dimensionality of the model (typically 512 or 768 in BERT).
+- `num_heads` is the number of attention heads (e.g., 8 or 12).
+- `d_ff` is the dimensionality of the feed-forward network's inner layer (typically 2048).
+- `mask` is used to ignore padding tokens in the input during the attention operation.
+
+You can instantiate a transformer block using:
+
+```python
+post_ln_transformer_block = TransformerBlockPostLN(d_model=512, num_heads=8, d_ff=2048)
+pre_ln_transformer_block = TransformerBlockPreLN(d_model=512, num_heads=8, d_ff=2048)
+```
+
+Remember, this is a very high-level example and lacks many details such as proper mask handling, dropout, and other nuances. For a full implementation, you would typically use an existing library like `transformers` from Hugging Face.
+
+
 
 # complexity of transformer
 
-# long-context how?
+
 
 # Tokenizer: word-level, character-level, subword-level
 
@@ -45,12 +305,18 @@ here as RLHF-V1, . . . , RLHF-V5.
 ## Byte-Pair Encoding / BPE / BBPE: GPT-2, RoBERTa, GPT-J, LLaMA
   - 词频统计 + 词表合并<img width="1638" alt="Screenshot 2024-01-13 at 5 20 14 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/fda20ba0-e31c-41b6-9251-bf37ced6a681">
   - <img width="1618" alt="Screenshot 2024-01-13 at 5 22 40 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/3108351e-5313-4e8f-b879-e671c7b214fc">
+  <img width="1680" alt="Screenshot 2024-03-22 at 8 37 31 AM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/3bd4e085-67ba-4722-94c6-b26467c92249">
 
 
 
 # Positional Embedding
 ## sinusoidal embeddings
+Problem: vectors move around chaotically when the position changes -> can lead to overfitting or memorizing
+<img width="1488" alt="Screenshot 2024-03-21 at 12 52 40 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/451ffca3-234d-4143-8ac6-00254cd6e2a8">
+[Source](https://youtu.be/GQPOtyITy54?t=463)
 ## learned embeddings
+
+## RoPE
 
 # Attention mechanism
 ## <img width="360" alt="Screenshot 2024-01-13 at 3 36 27 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/446b3e8c-9e03-48b6-bac0-b77d0cf7da76">
@@ -69,12 +335,17 @@ here as RLHF-V1, . . . , RLHF-V5.
   - <img width="1174" alt="Screenshot 2024-01-13 at 4 11 00 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/20bdfebe-72a5-489c-b8b0-6dacbbffebd7">
 ## attention_mask: [B, L, L]; usage: training (1, 1, ..., 1, 0, 0) and inference (upper right corner are all 0, since we cannot see the future)
   - adder = (1.0 - tf.cast(attention_mask, attention_scores.dtype)) * -10000.0
-## Add & Norm
+## Add & Norm![Screenshot 2024-03-20 at 12 15 20](https://github.com/why2011btv/why2011btv.github.io/assets/32129905/8489c466-708d-4591-a319-a97b4fd97c78)
+
   - <img width="1162" alt="Screenshot 2024-01-13 at 4 27 14 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/ccab4f67-b074-466c-8133-926aa45d93c6">
   - Add (residual connection): 相当于在求导时加了一个恒等项，去减少梯度消失的问题
   - Batch-norm vs Layer-norm<img width="1103" alt="Screenshot 2024-01-13 at 4 32 57 PM" src="https://github.com/why2011btv/why2011btv.github.io/assets/32129905/c908cc29-0793-4fcc-8881-b6de25d08a7d">
   - 序列任务中更常用Layer-norm：因为序列数据的长度不一样，batch-norm在针对不同样本的同一位置做归一化时无法得到真实分布的统计值；而layer-norm会对同一个样本的每一个位置的不同特征都做归一化
   - Order of Add & Norm: 保持主干网络的方差稳定，使模型泛化能力更强，但不容易收敛；如果先Norm后Residual（pre-normalization）：只是增加了网络宽度，深度没有太大增加，效果不如post-normalization好
+  - [Post-LN vs Pre-LN](https://arxiv.org/pdf/2002.04745.pdf)
+    -  the scale of the expected gradients grows along with the layer index for the Post-LN Transformer. On the contrary, the scale almost keeps the same for different layers in the Pre-LN Transformer
+    -  Pre-LN: the learning rate warm-up stage can be safely removed, and thus, the number of hyper-parameter is reduced.
+    -  Furthermore, we observe that the loss decays faster for the Pre-LN Transformer model. It can achieve comparable final performances but use much less training time  
 ## FFN Activation function:
   - ReLU (Attention is all you need)
   - GeLU (BERT): Introduce regularization; 越小的值越容易被丢弃；相当于ReLU和dropout的综合

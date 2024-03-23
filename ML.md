@@ -102,7 +102,16 @@
   - CBOW: predicts central word, basing on surrounding words.
   - Skip-Gram: indicates the context (surrounding words) using selected, single words.
 20. PCA
-  - reduce the dimension of your feature space.
+  Principal Component Analysis (PCA) is a statistical technique used in the field of data science and statistics for dimensionality reduction while preserving as much of the variability in the data as possible. It's particularly useful when dealing with high-dimensional data sets. The goal of PCA is to transform the original set of variables into a smaller set of uncorrelated variables, called principal components, which are ordered by the amount of original variance they capture.
+
+    Here's a step-by-step explanation of how PCA works:
+
+    - Standardization: The first step usually involves standardizing the data on a feature-by-feature basis. This means subtracting the mean and dividing by the standard deviation for each feature, ensuring that each feature contributes equally to the analysis.
+    - Covariance Matrix Computation: Next, PCA computes the covariance matrix of the data. The covariance matrix expresses how variables are possibly related to one another. For two-dimensional data, for instance, the covariance matrix shows the variance in each dimension and the covariance between the two dimensions.
+    - Eigenvalue and Eigenvector Calculation: PCA involves finding the eigenvalues and eigenvectors of the covariance matrix. Eigenvectors point in the direction of the largest variance, while eigenvalues represent the magnitude of this variance. In other words, eigenvectors show the principal directions of the data, and eigenvalues show the importance of these directions.
+    - Sorting and Selecting Principal Components: The eigenvalues and eigenvectors are sorted in order of decreasing eigenvalues. The eigenvector associated with the highest eigenvalue is the first principal component, the eigenvector associated with the second highest eigenvalue is the second principal component, and so on. This process continues until you've selected the number of principal components you wish to keep. These components are the directions in which the data varies the most.
+    - Projection: Finally, the original data is projected onto the principal components. This results in a transformed dataset where the first principal component explains the largest portion of the variance, the second principal component explains the second largest portion, and so on. This transformed dataset is lower-dimensional if you've chosen to reduce the number of dimensions.
+    - The outcome of PCA is a set of principal components that are orthogonal (uncorrelated), ensuring that the transformed dataset does not have redundant or highly correlated features. This makes PCA very useful for exploratory data analysis, noise reduction, feature extraction and engineering, and preparing data for predictive modeling among other applications.
 22. SVD
 23. LDA
 24. Boosting
@@ -115,7 +124,7 @@
   - bootstrap: random sampling with replacement 
   - ![0*Wjdc5fBd53V108Qn](https://user-images.githubusercontent.com/32129905/145491070-95d2d97b-c10c-4514-b0fc-655c0621660b.png)
 28. Boosting vs Bagging
-Bagging 是 Bootstrap Aggregating 的简称，意思就是再取样 (Bootstrap) 然后在每个样本上训练出来的模型取平均，所以是降低模型的 variance. Bagging 比如 Random Forest 这种先天并行的算法都有这个效果。
+    - Bagging 是 Bootstrap Aggregating 的简称，意思就是再取样 (Bootstrap) 然后在每个样本上训练出来的模型取平均，所以是降低模型的 variance. Bagging 比如 Random Forest 这种先天并行的算法都有这个效果。
 Boosting 则是迭代算法，每一次迭代都根据上一次迭代的预测结果对样本进行加权，所以随着迭代不断进行，误差会越来越小，所以模型的 bias 会不断降低。比如 Adaptive Boosting，XGBoost 就是 Boosting 算法。
   - sampling method
     - Bagging：训练集是在原始集中有放回选取的，从原始集中选出的各轮训练集之间是独立的。
