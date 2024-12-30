@@ -1,3 +1,10 @@
+## 12/30/2024
+- [Large Concept Model](https://scontent-mia3-2.xx.fbcdn.net/v/t39.2365-6/470149925_936340665123313_5359535905316748287_n.pdf?_nc_cat=103&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=eVE4IWzjoAkQ7kNvgHXBt-7&_nc_zt=14&_nc_ht=scontent-mia3-2.xx&_nc_gid=AQn_G_S3xH05xScryOReG6K&oh=00_AYBS2dRAJAGYmtEwGyAyr4zJ0B1QFk0yGhxWnnspHCB8iQ&oe=6778C492)
+- [ClariQ Dataset - EMNLP'21](https://aclanthology.org/2021.emnlp-main.367.pdf)
+- [Travel Planning Agent - Meta, Nov. 2024](https://arxiv.org/pdf/2411.13904)
+- [Travel Planning Mixed Integer Linear Programming Solver - Meta, Oct. 2024](https://arxiv.org/pdf/2410.16456)
+- 
+
 ## 06/26/2022
 - [Latex Symbols](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
 
