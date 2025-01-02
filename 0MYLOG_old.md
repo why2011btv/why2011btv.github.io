@@ -5,7 +5,19 @@
   - fp8 mixed precision training
   - cross-node MoE training
   - multi-head latent attention
-  - 
+- Attention is all you need 
+  - "The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key"
+  - Q:
+    - "creature": Any adjectives in front of me?
+  - K:
+    - "fluffy": I am!
+    - "blue": I am!
+  - softmax(Q K^T / sqrt(d_k)): **attention_scores** (a compatibility function of the query with the corresponding key)
+  - softmax(Q K^T / sqrt(d_k)) V: a weighted sum of the values
+  - <img width="1031" alt="Screenshot 2025-01-02 at 4 25 37 PM" src="https://github.com/user-attachments/assets/e5660e98-c358-42f0-92ae-03bb038479ce" />
+  - <img width="1020" alt="Screenshot 2025-01-02 at 4 23 35 PM" src="https://github.com/user-attachments/assets/589c8bbd-48a2-40e7-a134-c6d265a0b8ab" />
+  - <img width="892" alt="Screenshot 2025-01-02 at 4 57 10 PM" src="https://github.com/user-attachments/assets/c19f811b-2af6-4576-87b6-9d36e7550aed" />
+
 
 
 ## 12/30/2024
