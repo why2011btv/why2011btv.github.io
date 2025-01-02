@@ -1,3 +1,13 @@
+## 01/02/2024
+- Deepseek V3
+  - load balancing
+  - multi-token prediction
+  - fp8 mixed precision training
+  - cross-node MoE training
+  - multi-head latent attention
+  - 
+
+
 ## 12/30/2024
 - [Large Concept Model](https://scontent-mia3-2.xx.fbcdn.net/v/t39.2365-6/470149925_936340665123313_5359535905316748287_n.pdf?_nc_cat=103&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=eVE4IWzjoAkQ7kNvgHXBt-7&_nc_zt=14&_nc_ht=scontent-mia3-2.xx&_nc_gid=AQn_G_S3xH05xScryOReG6K&oh=00_AYBS2dRAJAGYmtEwGyAyr4zJ0B1QFk0yGhxWnnspHCB8iQ&oe=6778C492)
 - [ClariQ Dataset - EMNLP'21](https://aclanthology.org/2021.emnlp-main.367.pdf)
