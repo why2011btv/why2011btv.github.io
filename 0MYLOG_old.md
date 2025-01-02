@@ -5,6 +5,10 @@
   - fp8 mixed precision training
   - cross-node MoE training
   - multi-head latent attention
+  - <img width="871" alt="Screenshot 2025-01-02 at 5 08 16 PM" src="https://github.com/user-attachments/assets/0afaeb2e-a1e6-4401-8b55-2d039747ca8c" />
+  - RMSNorm vs LayerNorm: 省略了均值计算，减少了计算开销，适合用于加速模型训练
+  - <img width="859" alt="Screenshot 2025-01-02 at 5 03 57 PM" src="https://github.com/user-attachments/assets/626e93ea-059f-49b2-af24-bd659d4d41bb" />
+
 - Attention is all you need 
   - "The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key"
   - Q:
