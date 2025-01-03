@@ -1,3 +1,7 @@
+## 01/03/2024
+- Online vs Offline RL
+  - [Offline RL](https://youtu.be/tW-BNW1ApN8?si=hnGTMmYYlYd6kyhz)
+
 ## 01/02/2024
 - Deepseek V3
   - load balancing
@@ -10,6 +14,7 @@
   - <img width="859" alt="Screenshot 2025-01-02 at 5 03 57 PM" src="https://github.com/user-attachments/assets/626e93ea-059f-49b2-af24-bd659d4d41bb" />
 
 - Attention is all you need 
+  - [Visualizing transformers and attention](https://youtu.be/KJtZARuO3JY?si=mPS02oDnMM__JanF)
   - "The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key"
   - Q:
     - "creature": Any adjectives in front of me?
