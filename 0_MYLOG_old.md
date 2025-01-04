@@ -1,6 +1,15 @@
 ## 01/03/2024
 - Online vs Offline RL
   - [Offline RL](https://youtu.be/tW-BNW1ApN8?si=hnGTMmYYlYd6kyhz)
+    - At training time, RL is conventionally viewed as an active and online process where an agent interacts with the world, collects some experience, uses that experience to modify its behavior which we call policy, and then collects some more experience and this is done many, many times. "Learning through trial and error"
+    - The assumptions of the offline RL process do not require you to do this more than once (collect a dataset using any policy or mixture of policies)
+    - Then step two is to run an offline RL algorithm on this dataset and intuitively what this algorithm will do is it will squeeze the best behavior it can out of that data. So you can think of it as the best policy we can get based on what the data tells us.
+    - The end goal in offline RL is to get a better policy than the one that collected your data.
+    - Fundamental problem: counterfactual queries
+      - the policy is trying to figure out what would happen if it were to do something other than what was done in the data
+      - fundamentally if you want to improve the behavior in the data you have to answer these counterfactual queries
+      - <img width="1704" alt="Screenshot 2025-01-03 at 4 25 35 PM" src="https://github.com/user-attachments/assets/5104e660-fef7-44f3-ad03-6aa278f69dfd" />
+
 
 ## 01/02/2024
 - Deepseek V3
