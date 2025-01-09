@@ -1,3 +1,13 @@
+## 01/09/2024
+- Web Agent Benchmarks
+  - WebLINX: Real-World Website Navigation with Multi-Turn Dialogue
+    - given the initial user instruction, an agent must complete a real-world task inside a web browser while communicating with the user via multi-turn dialogue<img width="1446" alt="Screenshot 2025-01-09 at 11 34 20 AM" src="https://github.com/user-attachments/assets/805927c1-7e26-4bb3-bb6c-17d7201cc06c" />
+  - Tur[k]ingBench: A Challenge Benchmark for Web Agents
+    - 158 web-grounded tasks; Amazon Mechanical Turk Tasks<img width="1314" alt="Screenshot 2025-01-09 at 11 35 03 AM" src="https://github.com/user-attachments/assets/c59035e7-9b6d-486b-a367-943cd34d40dc" />
+  - WebVoyager
+    - 300 information-retrieval tasks, from 15 real-world consumer websites (e.g., Amazon, Coursera, Booking)  
+
+
 ## 01/03/2024
 - Online vs Offline RL
   - [Offline RL](https://youtu.be/tW-BNW1ApN8?si=hnGTMmYYlYd6kyhz)
