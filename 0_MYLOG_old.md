@@ -1,11 +1,20 @@
 ## 01/09/2024
 - Web Agent Benchmarks
-  - WebLINX: Real-World Website Navigation with Multi-Turn Dialogue
-    - given the initial user instruction, an agent must complete a real-world task inside a web browser while communicating with the user via multi-turn dialogue<img width="1446" alt="Screenshot 2025-01-09 at 11 34 20 AM" src="https://github.com/user-attachments/assets/805927c1-7e26-4bb3-bb6c-17d7201cc06c" />
-  - Tur[k]ingBench: A Challenge Benchmark for Web Agents
+  - AssistantBench [2407.15711](https://arxiv.org/pdf/2407.15711)
+    - realistic and time-consuming tasks on the web, e.g., monitoring real-estate markets or locating relevant nearby businesses
+  - Androidworld: A dynamic benchmarking environment for autonomous agents [2405.14573](https://arxiv.org/pdf/2405.14573)
+  - OSWorld [2404.07972](https://arxiv.org/pdf/2404.07972)<img width="1085" alt="Screenshot 2025-01-09 at 12 06 58 PM" src="https://github.com/user-attachments/assets/789e26b2-8d5f-4a2c-94bc-ea626ae7bd0f" />
+  - VisualWebBench: Web Page Understanding and Grounding [2404.05955](https://arxiv.org/pdf/2404.05955)
+    - seven tasks, and comprises 1.5K human-curated instances from 139 real websites, cover- ing 87 sub-domains
+  - Tur[k]ingBench: A Challenge Benchmark for Web Agents [2403.11905](https://arxiv.org/pdf/2403.11905)
     - 158 web-grounded tasks; Amazon Mechanical Turk Tasks<img width="1314" alt="Screenshot 2025-01-09 at 11 35 03 AM" src="https://github.com/user-attachments/assets/c59035e7-9b6d-486b-a367-943cd34d40dc" />
-  - WebVoyager
-    - 300 information-retrieval tasks, from 15 real-world consumer websites (e.g., Amazon, Coursera, Booking)  
+  - WorkArena a benchmark developed on the widely-used ServiceNow platform [2403.07718](https://arxiv.org/pdf/2403.07718)
+  - WebLINX: Real-World Website Navigation with Multi-Turn Dialogue [2402.05930](https://arxiv.org/pdf/2402.05930)
+    - given the initial user instruction, an agent must complete a real-world task inside a web browser while communicating with the user via multi-turn dialogue<img width="1446" alt="Screenshot 2025-01-09 at 11 34 20 AM" src="https://github.com/user-attachments/assets/805927c1-7e26-4bb3-bb6c-17d7201cc06c" />
+  - WebVoyager [2401.13919](https://arxiv.org/pdf/2401.13919)
+    - 300 information-retrieval tasks, from 15 real-world consumer websites (e.g., Amazon, Coursera, Booking)
+  - AgentBench [2308.03688](https://arxiv.org/pdf/2308.03688)
+    - poor long-term reasoning, decision-making, and instruction following abilities; Training on code and high quality multi-turn alignment data could improve agent performance<img width="587" alt="Screenshot 2025-01-09 at 12 14 49 PM" src="https://github.com/user-attachments/assets/6d6d9cef-76c7-4b25-b7b2-eb96179bd924" />
 
 
 ## 01/03/2024
