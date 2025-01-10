@@ -1,6 +1,8 @@
 ## 01/10/2025
 - AssistantBench is a benchmark that requires searching on the open web<img width="1388" alt="Screenshot 2025-01-10 at 4 54 00 PM" src="https://github.com/user-attachments/assets/39e7ef8b-bc7e-4649-ba99-181adfb029b3" />
- 
+- Tree Search for Language Model Agents [2407.01476](https://arxiv.org/pdf/2407.01476)
+
+
 ## 01/09/2025
 - The BrowserGym Ecosystem for Web Agent Research [2412.05467](https://arxiv.org/pdf/2412.05467)<img width="1385" alt="Screenshot 2025-01-10 at 4 43 48 PM" src="https://github.com/user-attachments/assets/00dd5ff2-8d72-4a48-ba61-0a6fc205d5b8" /><img width="966" alt="Screenshot 2025-01-10 at 4 50 10 PM" src="https://github.com/user-attachments/assets/00692b87-a611-402a-b7a3-16756597f31c" />
 
