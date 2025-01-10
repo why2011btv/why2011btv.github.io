@@ -1,4 +1,7 @@
-## 01/09/2024
+## 01/10/2025
+- AssistantBench is a benchmark that requires searching on the open web<img width="1388" alt="Screenshot 2025-01-10 at 4 54 00 PM" src="https://github.com/user-attachments/assets/39e7ef8b-bc7e-4649-ba99-181adfb029b3" />
+ 
+## 01/09/2025
 - The BrowserGym Ecosystem for Web Agent Research [2412.05467](https://arxiv.org/pdf/2412.05467)<img width="1385" alt="Screenshot 2025-01-10 at 4 43 48 PM" src="https://github.com/user-attachments/assets/00dd5ff2-8d72-4a48-ba61-0a6fc205d5b8" /><img width="966" alt="Screenshot 2025-01-10 at 4 50 10 PM" src="https://github.com/user-attachments/assets/00692b87-a611-402a-b7a3-16756597f31c" />
 
 
@@ -20,7 +23,7 @@
     - poor long-term reasoning, decision-making, and instruction following abilities; Training on code and high quality multi-turn alignment data could improve agent performance<img width="587" alt="Screenshot 2025-01-09 at 12 14 49 PM" src="https://github.com/user-attachments/assets/6d6d9cef-76c7-4b25-b7b2-eb96179bd924" />
 
 
-## 01/03/2024
+## 01/03/2025
 - Online vs Offline RL
   - [Offline RL](https://youtu.be/tW-BNW1ApN8?si=hnGTMmYYlYd6kyhz)
     - At training time, RL is conventionally viewed as an active and online process where an agent interacts with the world, collects some experience, uses that experience to modify its behavior which we call policy, and then collects some more experience and this is done many, many times. "Learning through trial and error"
@@ -33,7 +36,7 @@
       - <img width="1704" alt="Screenshot 2025-01-03 at 4 25 35 PM" src="https://github.com/user-attachments/assets/5104e660-fef7-44f3-ad03-6aa278f69dfd" />
 
 
-## 01/02/2024
+## 01/02/2025
 - Deepseek V3
   - load balancing
   - multi-token prediction
