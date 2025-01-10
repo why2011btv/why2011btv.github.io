@@ -1,4 +1,5 @@
 ## 01/09/2024
+- The BrowserGym Ecosystem for Web Agent Research [2412.05467](https://arxiv.org/pdf/2412.05467)
 - Web Agent Benchmarks
   - AssistantBench [2407.15711](https://arxiv.org/pdf/2407.15711)
     - realistic and time-consuming tasks on the web, e.g., monitoring real-estate markets or locating relevant nearby businesses
