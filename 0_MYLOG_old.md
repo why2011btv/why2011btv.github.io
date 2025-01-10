@@ -1,6 +1,8 @@
 ## 01/10/2025
 - AssistantBench is a benchmark that requires searching on the open web<img width="1388" alt="Screenshot 2025-01-10 at 4 54 00 PM" src="https://github.com/user-attachments/assets/39e7ef8b-bc7e-4649-ba99-181adfb029b3" />
-- Tree Search for Language Model Agents [2407.01476](https://arxiv.org/pdf/2407.01476)
+- On Tree Search
+  - Tree Search for Language Model Agents [2407.01476](https://arxiv.org/pdf/2407.01476)
+  - Language agent tree search unifies reasoning acting and planning in language models [2310.04406](https://arxiv.org/pdf/2310.04406)
 
 
 ## 01/09/2025
