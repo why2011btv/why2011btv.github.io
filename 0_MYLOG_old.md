@@ -1,3 +1,6 @@
+## 02/03/2025
+- [offline和off-policy有什么区别](https://www.zhihu.com/question/627726012/answer/3264684123?utm_psn=1869912410707603456)
+
 ## 01/29/2025
 - DeepSeek R1 Technical Report
   - DeepSeek-R1-Zero demonstrates capabilities such as self-verification, reflection, and generating long CoTs, marking a significant milestone for the research community. Notably, it is the first open research to validate that reasoning capabilities of LLMs can be incentivized purely through RL, without the need for SFT. 
