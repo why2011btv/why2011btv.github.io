@@ -1,3 +1,7 @@
+## 02/04/2025
+- [GRPO](https://superb-makemake-3a4.notion.site/group-relative-policy-optimization-GRPO-18c41736f0fd806eb39dc35031758885)
+- [这个是前deepseek的人复现R1深度思考学习的代码](https://github.com/ZihanWang314/ragen)
+
 ## 02/03/2025
 - [offline和off-policy有什么区别](https://www.zhihu.com/question/627726012/answer/3264684123?utm_psn=1869912410707603456)
 
