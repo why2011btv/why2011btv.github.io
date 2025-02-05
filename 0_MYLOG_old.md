@@ -1,6 +1,20 @@
 ## 02/04/2025
 - [GRPO](https://superb-makemake-3a4.notion.site/group-relative-policy-optimization-GRPO-18c41736f0fd806eb39dc35031758885)
 - [这个是前deepseek的人复现R1深度思考学习的代码](https://github.com/ZihanWang314/ragen)
+- 借贵宝地宣传下我们的新工作：
+
+我们推出了Goedel-Prover, 当下SOTA的开源形式化推理LLM(LLM for Formal Language Reasoning).  (Formal Language Reasoning 也叫 Automated Theorem Proving.)
+
+✅ 在 miniF2F 上比之前的开源 SOTA 提高了 7%
+🏆 在 PutnamBench 排行榜上排名第一
+🤖 在 Lean Workbook 上解决的问题数量比之前的工作多 1.9 倍
+
+Twitter: https://x.com/Yong18850571/status/1886416058837533024
+项目网站: https://goedel-lm.github.io
+huggingface: https://huggingface.co/Goedel-LM/Goedel-Prover-SFT
+github: https://github.com/Goedel-LM/Goedel-Prover
+
+推理是通往AGI的核心能力。为什么需要形式化推理 (Formal Language Reasoning)? 因为基于自然语言(Natural Language)的推理是无法机器验证的(machine verifiable)，那在应用中会存在难以trust的致命缺陷。同时不能验证也给进一步提升模型的带来了困难。Formal Language的reasoning是可以通过compiler严格验证的。
 
 ## 02/03/2025
 - [offline和off-policy有什么区别](https://www.zhihu.com/question/627726012/answer/3264684123?utm_psn=1869912410707603456)
