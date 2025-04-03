@@ -18,3 +18,7 @@
   + <img width="776" alt="Screen Shot 2025-04-02 at 8 59 47 PM" src="https://github.com/user-attachments/assets/668523fe-7912-4df1-a645-40f3151fd300" />
 - 数组 7 区间和 （✅）
 - 数组 8 开发商购买土地（未完成❌）
+
+# 链表
+- 203 (removeElements)
+  + <img width="755" alt="Screen Shot 2025-04-02 at 9 52 41 PM" src="https://github.com/user-attachments/assets/35d42051-2b56-405b-b649-fdbc60e828e1" />
