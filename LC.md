@@ -1,5 +1,6 @@
 [3, 528,]
 # 数组
+## 注意⚠️：循环不变量 左闭右开
 - 704 (Binary Search)
   + <img width="736" alt="Screen Shot 2025-03-31 at 7 12 06 PM" src="https://github.com/user-attachments/assets/cf492557-2eea-45b4-be8d-708f5b78267c" />
 
