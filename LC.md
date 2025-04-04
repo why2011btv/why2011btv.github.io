@@ -17,8 +17,18 @@
 - 59 (generateMatrix)
   + <img width="776" alt="Screen Shot 2025-04-02 at 8 59 47 PM" src="https://github.com/user-attachments/assets/668523fe-7912-4df1-a645-40f3151fd300" />
 - 数组 7 区间和 （✅）
-- 数组 8 开发商购买土地（未完成❌）
+- 数组 8 开发商购买土地（嫌麻烦 未完成❌）
 
 # 链表
 - 203 (removeElements)
   + <img width="755" alt="Screen Shot 2025-04-02 at 9 52 41 PM" src="https://github.com/user-attachments/assets/35d42051-2b56-405b-b649-fdbc60e828e1" />
+- 707 (MyLinkedList) 嫌麻烦未完成❌
+- 206 (reverseList)
+- 24 (swapPairs) 用时：16min
+- 19 (removeNthFromEnd) 用时：9min
+  + 但我的做法没有使用**双指针** 不够efficient 
+- 160 (getIntersectionNode) 5min没思路 看答案加实现：14min
+  + 注意到intersection node一定在末尾 所以先把尾端对齐
+- 142 (detectCycle) 6min 没思路 看答案加实现：28min
+  + <img width="769" alt="Screen Shot 2025-04-04 at 11 21 56 AM" src="https://github.com/user-attachments/assets/90459323-e160-40c1-8220-b51e75867be1" />
+
