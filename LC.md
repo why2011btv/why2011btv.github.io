@@ -29,6 +29,37 @@
   + 但我的做法没有使用**双指针** 不够efficient 
 - 160 (getIntersectionNode) 5min没思路 看答案加实现：14min
   + 注意到intersection node一定在末尾 所以先把尾端对齐
-- 142 (detectCycle) 6min 没思路 看答案加实现：28min
+- **142** (detectCycle) 6min 没思路 看答案加实现：28min
+  + <img width="937" alt="Screen Shot 2025-04-06 at 9 40 38 AM" src="https://github.com/user-attachments/assets/5a6fbd58-4384-4508-a9b6-ff88f20a1a02" />
   + <img width="769" alt="Screen Shot 2025-04-04 at 11 21 56 AM" src="https://github.com/user-attachments/assets/90459323-e160-40c1-8220-b51e75867be1" />
+
+# 哈希表
+## 数组实现
+```Python
+count = [0] * 101  # 键范围为0~100
+nums = [1, 2, 2, 3]
+for num in nums:
+    count[num] += 1
+print(count[2])  # 输出2
+```
+## set实现
+```Python
+seen = set()
+nums = [1, 2, 3, 1]
+for num in nums:
+    if num in seen:
+        print("重复元素：", num)
+    seen.add(num)
+```
+## map实现
+```Python
+count = {}
+nums = [1, 2, 2, 3]
+for num in nums:
+    count[num] = count.get(num, 0) + 1
+print(count[2])  # 输出2
+```
+
+- 242
+- 
 
