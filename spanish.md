@@ -17,11 +17,16 @@
   - cocinar: cook
   - correr: run
   - ciencia: science
+  - classroom: Salon de clase
+  - como se dice: how do you say
+  - cuanto cuesto
+  - 
 - 
 - d
   - deportes: sports
 - e
   - esquiar: ski
+  - empleado: employee
 - f
 - g
   - generos: genre
@@ -45,9 +50,16 @@
 - o
 - p
   - papa: potato
+  - puedo: I can
+  - papel: paper
+  - pizzara: white board
+  - 
+  - 
 - q
+  - que significa xxx:  what is the meaning 
 - r
 - s
+  - silla: chair
 - t
   - todo: all
 - u
