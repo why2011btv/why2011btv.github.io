@@ -1,0 +1,56 @@
+- a
+  - apretón: squeeze
+  - anuncio: announce 
+
+- b
+  - besito: kiss
+  - bebé: drink
+  - biblia: bible
+  - bebidas: drink
+  - baloncesto: basketball
+  - bailar: dance
+  - 
+- c
+  - coco: coconut
+  - comida: food
+  - cerveza: beer
+  - cocinar: cook
+  - correr: run
+  - ciencia: science
+- 
+- d
+  - deportes: sports
+- e
+  - esquiar: ski
+- f
+- g
+  - generos: genre
+  - gimnasio: gym
+- h
+  - hasta: until
+ 
+- i
+  - igualmente: likewise
+- j
+- k
+- l
+  - loco: crazy
+  - lugares: places
+ 
+- m
+  - mapa
+  - manos: hands
+ 
+- n
+- o
+- p
+  - papa: potato
+- q
+- r
+- s
+- t
+  - todo: all
+- u
+- v
+- w
+- 
