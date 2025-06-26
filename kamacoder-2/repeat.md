@@ -1,0 +1,4 @@
+- UnionFind: how to implement **init, find, join**
+- BFS: when to add a node to visited (answer: add in the for loop)
+- DFS: when to add a node to visited (answer: 1: at the beginning, use visited / coloring ; 2: backtracking)
+- Topological Sort
