@@ -20,17 +20,25 @@
   - classroom: Salon de clase
   - como se dice: how do you say
   - cuanto cuesto
-  - 
+  - curiosa: curious
+  - contamismo
 - 
 - d
   - deportes: sports
 - e
   - esquiar: ski
-  - empleado: employee
+  - empleado / empleada: employee
+  - estadio
+  - esconder
+  - esperar: wait
 - f
+  - fuego: fire
+  - 
 - g
   - generos: genre
   - gimnasio: gym
+  - globo: balloon
+  - gafas: glasses
 - h
   - hasta: until
  
@@ -41,18 +49,26 @@
 - l
   - loco: crazy
   - lugares: places
+  - lapiz: pencil
+  - la estudiante: is valid
  
 - m
   - mapa
   - manos: hands
+  - mono: monkey
+  - mirando: look
+  - molestar: annoy
  
 - n
 - o
+  - ojo: notice!
 - p
   - papa: potato
   - puedo: I can
   - papel: paper
   - pizzara: white board
+  - patron: boss
+  - patinar: roller skate
   - 
   - 
 - q
@@ -60,9 +76,11 @@
 - r
 - s
   - silla: chair
+  - salvavida: lifeguards or life jackets/life buoys,
 - t
   - todo: all
 - u
 - v
 - w
-- 
+- z
+  - zoológico
