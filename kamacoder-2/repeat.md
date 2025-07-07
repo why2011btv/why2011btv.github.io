@@ -16,4 +16,16 @@ nums = [3, 1, 4]
 nums.sort() # [1, 3, 4]
 ```
 
-- 
+- 无向图的连通分量
+-
+```Python
+from sortedcontainers import SortedSet
+
+days = SortedSet([1, 3, 4, 6, 9])
+
+# 我想找 >= 5 的最小元素
+d = days.bisect_left(5)
+print(d)   # 输出 3，因为 days[3] = 6
+print(days[d])  # 6
+days.pop(d)
+```
