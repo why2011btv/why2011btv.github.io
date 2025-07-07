@@ -22,6 +22,7 @@
   - cuanto cuesto
   - curiosa: curious
   - contamismo
+  - cancion: song; la cancion
 - 
 - d
   - deportes: sports
