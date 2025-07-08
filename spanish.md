@@ -23,9 +23,15 @@
   - curiosa: curious
   - contamismo
   - cancion: song; la cancion
+  - cabeza: head
+  - cuello: neck
+  - cuaderno: notebook
+  - cinta adhesiva: 透明胶
+  - 
 - 
 - d
   - deportes: sports
+  - despacio: slowly
 - e
   - esquiar: ski
   - empleado / empleada: employee
@@ -59,6 +65,7 @@
   - mono: monkey
   - mirando: look
   - molestar: annoy
+  - marcador: 记号笔
  
 - n
 - o
@@ -75,12 +82,17 @@
 - q
   - que significa xxx:  what is the meaning 
 - r
+  - rodilla: knee
+  - resaltador: 荧光笔
 - s
   - silla: chair
   - salvavida: lifeguards or life jackets/life buoys,
 - t
   - todo: all
+  - trabajadora: worker
+  - tijera: 剪刀
 - u
+  - uva: grape
 - v
 - w
 - z
