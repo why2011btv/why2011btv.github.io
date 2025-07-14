@@ -66,6 +66,7 @@
   - mirando: look
   - molestar: annoy
   - marcador: 记号笔
+  - muchacha: young woman
  
 - n
 - o
@@ -91,6 +92,7 @@
   - todo: all
   - trabajadora: worker
   - tijera: 剪刀
+  - tarjeta: card
 - u
   - uva: grape
 - v
