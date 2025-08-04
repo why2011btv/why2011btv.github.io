@@ -27,17 +27,20 @@
   - cuello: neck
   - cuaderno: notebook
   - cinta adhesiva: 透明胶
+  - carta: 
   - 
 - 
 - d
   - deportes: sports
   - despacio: slowly
+  - desean: want
 - e
   - esquiar: ski
   - empleado / empleada: employee
   - estadio
   - esconder
   - esperar: wait
+  - entiendo: no entiendo I don't understand
 - f
   - fuego: fire
   - 
@@ -48,6 +51,7 @@
   - gafas: glasses
 - h
   - hasta: until
+  - helado: ice cream
  
 - i
   - igualmente: likewise
@@ -73,7 +77,7 @@
   - ojo: notice!
 - p
   - papa: potato
-  - puedo: I can
+  - puedo: I can / Can I ...
   - papel: paper
   - pizzara: white board
   - patron: boss
@@ -88,11 +92,14 @@
 - s
   - silla: chair
   - salvavida: lifeguards or life jackets/life buoys,
+  - esquiar: ski
 - t
   - todo: all
   - trabajadora: worker
   - tijera: 剪刀
   - tarjeta: card
+  - tomar: drink
+  - tocar: play (e.g., the piano)
 - u
   - uva: grape
 - v
