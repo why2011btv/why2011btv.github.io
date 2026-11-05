@@ -83,9 +83,83 @@ img { max-width: 100%; }
 .main-content h4:empty { display: none; }
 .main-content p { margin: 0 0 .9rem; }
 .main-content > h2#Bio + p { font-size: 15.5px; line-height: 1.75; }
-.research-goal { margin: 1.2rem 0 1.5rem; color: var(--heading); font-size: 17px; font-weight: 500; line-height: 1.6; }
 .main-content ul { margin: .2rem 0 0; padding-left: 1.2rem; }
 .main-content li { margin: 0 0 .32rem; padding-left: .15rem; }
+
+.venture-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  margin-top: .35rem;
+}
+
+.venture-card {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  min-height: 112px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.venture-card:hover,
+.venture-card:focus-visible {
+  border-color: #aebfca;
+  box-shadow: 0 8px 22px rgba(45, 68, 82, .09);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.venture-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: .65rem;
+}
+
+.venture-visual--moor { background: #f4eee6; }
+.venture-visual--basket { background: #243b2f; }
+.venture-visual img {
+  width: 100%;
+  height: 88px;
+  object-fit: contain;
+}
+
+.venture-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: .85rem .9rem;
+}
+
+.venture-role {
+  margin-bottom: .25rem;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+}
+
+.venture-copy strong {
+  color: var(--heading);
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.venture-copy strong span { color: var(--accent); font-size: 12px; }
+.venture-description {
+  margin-top: .32rem;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
 
 .publication { margin: 0 0 .9rem; padding: 0; font-size: 14px; line-height: 1.62; }
 .publication a:first-of-type { color: var(--accent); font-size: 15px; font-weight: 600; }
@@ -125,6 +199,9 @@ img { max-width: 100%; }
   .main-content { padding: 0 1.25rem 2rem; }
   .main-content > h2 { margin-top: 2rem; font-size: 21px; }
   .main-content > h2#Bio + p { font-size: 15px; }
+  .venture-grid { grid-template-columns: 1fr; gap: .65rem; }
+  .venture-card { grid-template-columns: 92px minmax(0, 1fr); min-height: 104px; }
+  .venture-visual img { height: 78px; }
   .publication { font-size: 13px; }
   .publication a:first-of-type { font-size: 14px; }
   #research-projects + ul { grid-template-columns: 1fr; gap: 1.3rem; }
