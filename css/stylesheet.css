@@ -83,6 +83,7 @@ img { max-width: 100%; }
 .main-content h4:empty { display: none; }
 .main-content p { margin: 0 0 .9rem; }
 .main-content > h2#Bio + p { font-size: 15.5px; line-height: 1.75; }
+.research-goal { margin: 1.2rem 0 1.5rem; color: var(--heading); font-size: 17px; font-weight: 500; line-height: 1.6; }
 .main-content ul { margin: .2rem 0 0; padding-left: 1.2rem; }
 .main-content li { margin: 0 0 .32rem; padding-left: .15rem; }
 
@@ -129,6 +130,16 @@ img { max-width: 100%; }
   #research-projects + ul { grid-template-columns: 1fr; gap: 1.3rem; }
   #research-projects + ul li p:first-child { min-height: 0; }
   #research-projects + ul li p:last-child { height: auto; min-height: 150px; }
+}
+
+@media (max-width: 360px) {
+  .page-header { padding-top: 2rem; }
+  .header { display: block; }
+  .profile-img { margin: 0 auto 1rem; }
+  .profile-img img { width: 120px; height: 157px; margin: 0 auto; }
+  .hero-copy { display: block; text-align: center; }
+  .project-name { font-size: 20px; white-space: nowrap; }
+  .research-line { margin-top: .65rem; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
